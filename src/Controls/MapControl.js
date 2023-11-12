@@ -45,7 +45,7 @@ import PACKETVER  from '/src/Network/PacketVerManager';
 import PACKET  from '/src/Network/PacketStructure';
 import Network  from '/src/Network/NetworkManager';
 import Events  from '/src/Core/Events';
-import 'Controls/ScreenShot';
+import '/src/Controls/ScreenShot';
 
 
 /**

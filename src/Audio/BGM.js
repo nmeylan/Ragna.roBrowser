@@ -50,8 +50,6 @@
  * @author Vincent Thibault
  */
 
-import require  from '/src/require';
-
 import jQuery  from '/src/Utils/jquery';
 import Client  from '/src/Core/Client';
 import Preferences  from '/src/Preferences/Audio';

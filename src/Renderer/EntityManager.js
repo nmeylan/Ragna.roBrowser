@@ -13,8 +13,8 @@
 // Load dependencies
 import Session  from '/src/Engine/SessionStorage';
 
-import Entity   from '/src/Entity/Entity';
-import SpriteRenderer   from '/src/SpriteRenderer';
+import Entity   from '/src/Renderer/Entity/Entity';
+import SpriteRenderer   from '/src/Renderer/SpriteRenderer';
 import Mouse  from '/src/Controls/MouseEventHandler';
 import KEYS  from '/src/Controls/KeyEventHandler';
 import PathFinding  from '/src/Utils/PathFinding';

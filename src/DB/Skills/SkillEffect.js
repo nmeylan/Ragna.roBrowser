@@ -170,7 +170,7 @@
  *
  */
 
-import SK   from '/src/SkillConst';
+import SK   from './SkillConst';
 
 'use strict';
 

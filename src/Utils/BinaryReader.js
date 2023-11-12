@@ -24,7 +24,7 @@
 
 var _global = this;
 
-import Struct   from '/src/Struct';
+import Struct   from './Struct';
 import TextEncoding  from '/src/Vendors/text-encoding';
 'use strict';
 

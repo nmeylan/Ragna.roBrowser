@@ -46,8 +46,6 @@
  */
 
 
-import require  from '/src/require';
-
 import Configs  from '/src/Core/Configs';
 'use strict';
 

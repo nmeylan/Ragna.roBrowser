@@ -22,7 +22,7 @@
  * @author Vincent Thibault
  */
 
-import BinaryReader   from '/src/BinaryReader';
+import BinaryReader   from '/src/Utils/BinaryReader';
 
 'use strict';
 

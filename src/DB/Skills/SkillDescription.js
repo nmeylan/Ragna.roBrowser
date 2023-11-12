@@ -38,7 +38,7 @@
  * @author Vincent Thibault
  */
 
-import SKID   from '/src/SkillConst';
+import SKID   from './SkillConst';
 
 "use strict";
 

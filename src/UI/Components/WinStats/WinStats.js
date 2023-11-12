@@ -29,6 +29,7 @@ import Session  from '/src/Engine/SessionStorage';
 import UIVersionManager  from '/src/UI/UIVersionManager';
 import Preferences  from '/src/Core/Preferences';
 import Renderer  from '/src/Renderer/Renderer';
+import exports from "../../../DB/TownInfo";
 
 
 var _preferences;
@@ -226,12 +227,13 @@ WinStats.onRemove = function onRemove()
  */
 WinStats.onRequestUpdate = function onRequestUpdate(/*id, amount*/){};
 
-
+var exp;
 if (UIVersionManager.getWinStatsVersion() > 0){
     /**
      * Export it (don't add it to component list)
      */
-    return WinStats;
+    exp = WinStats;
 } else {
-    return UIManager.addComponent(WinStats);
+    exp = UIManager.addComponent(WinStats);
 }
+export default exp;

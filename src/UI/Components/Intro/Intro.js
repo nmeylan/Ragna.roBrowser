@@ -31,9 +31,9 @@ import htmlText  from './Intro.html';
 import cssText  from './Intro.css';
 import Context  from '/src/Core/Context';
 import Configs  from '/src/Core/Configs';
-import Particle   from '/src/Particle';
-import Preferences   from '/src/Preferences';
-import FileSystem   from '/src/FileSystem';
+import Particle   from './Particle';
+import Preferences   from './Preferences';
+import FileSystem   from './FileSystem';
 
 
 /**
