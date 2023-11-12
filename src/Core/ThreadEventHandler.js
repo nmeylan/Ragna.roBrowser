@@ -8,6 +8,36 @@
  * @author Vincent Thibault
  */
 
+/**
+ * Core/ThreadEventHandler.js
+ *
+ * Handler data received from Main Thread and process.
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+/**
+ * Core/ThreadEventHandler.js
+ *
+ * Handler data received from Main Thread and process.
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+/**
+ * Core/ThreadEventHandler.js
+ *
+ * Handler data received from Main Thread and process.
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
 importScripts('../Vendors/require.js');
 requirejs.config({
 	baseUrl: '../'

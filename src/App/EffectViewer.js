@@ -9,6 +9,83 @@
  */
 
 // Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/EffectViewer.js
+ *
+ * Show Str file effect
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
 require.onError = function (err) {
   'use strict';
 

@@ -7,173 +7,177 @@
  *
  * @author Vincent Thibault
  */
-define(function(require)
+/**
+ * UI/Components/Escape/Escape.js
+ *
+ * Game Escape window, manage options
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+'use strict';
+
+
+/**
+ * Dependencies
+ */
+import KEYS from 'Controls/KeyEventHandler';
+
+import Renderer from 'Renderer/Renderer';
+import UIManager from 'UI/UIManager';
+import UIComponent from 'UI/UIComponent';
+import SoundOption from 'UI/Components/SoundOption/SoundOption';
+import GraphicsOption from 'UI/Components/GraphicsOption/GraphicsOption';
+import ShortCutOption from 'UI/Components/ShortCutOption/ShortCutOption';
+import htmlText from 'text!./Escape.html';
+import cssText from 'text!./Escape.css';
+
+
+/**
+ * Create Escape window component
+ */
+var Escape = new UIComponent( 'Escape', htmlText, cssText );
+
+
+/**
+ * Initialize UI
+ */
+Escape.init = function init()
 {
-	'use strict';
+    this.ui.css({
+        top: (Renderer.height-this.ui.height()) * 0.75,
+        left:(Renderer.width -this.ui.width())  * 0.5
+    });
+    this.draggable();
+
+    this.ui.find('.node').mousedown(function(event){
+        event.stopImmediatePropagation();
+        return false;
+    });
+
+    // Only used in specific case
+    this.ui.find('button').show();
+    this.ui.find('.resurection, .savepoint').hide();
+
+    this.ui.find('.sound').click(onToggleSoundUI);
+    this.ui.find('.graphics').click(onToggleGraphicUI);
+    this.ui.find('.resurection').click(function(){ Escape.onResurectionRequest(); });
+    this.ui.find('.savepoint').click(function(){ Escape.onReturnSavePointRequest(); });
+    this.ui.find('.charselect').click(function(){ Escape.onCharSelectionRequest(); });
+    this.ui.find('.hotkey').click(onToggleShortcutUI);
+    this.ui.find('.exit').click(function(){ Escape.onExitRequest(); });
+    this.ui.find('.cancel').click(function(){ Escape.ui.hide(); });
+};
 
 
-	/**
-	 * Dependencies
-	 */
-	var KEYS               = require('Controls/KeyEventHandler');
-	var Renderer           = require('Renderer/Renderer');
-	var UIManager          = require('UI/UIManager');
-	var UIComponent        = require('UI/UIComponent');
-	var SoundOption        = require('UI/Components/SoundOption/SoundOption');
-	var GraphicsOption     = require('UI/Components/GraphicsOption/GraphicsOption');
-	var ShortCutOption     = require('UI/Components/ShortCutOption/ShortCutOption');
-	var htmlText           = require('text!./Escape.html');
-	var cssText            = require('text!./Escape.css');
+/**
+ * Window must not be visible once append
+ * but need to be here to manage key event
+ */
+Escape.onAppend = function onAppend()
+{
+    this.ui.hide();
+};
 
 
-	/**
-	 * Create Escape window component
-	 */
-	var Escape = new UIComponent( 'Escape', htmlText, cssText );
+/**
+ * Reset buttons once UI is removed
+ */
+Escape.onRemove = function onRemove()
+{
+    this.ui.hide();
+    this.ui.find('.resurection, .savepoint').hide();
+    this.ui.find('.graphics, .sound, .hotkey').show();
+};
 
 
-	/**
-	 * Initialize UI
-	 */
-	Escape.init = function init()
-	{
-		this.ui.css({
-			top: (Renderer.height-this.ui.height()) * 0.75,
-			left:(Renderer.width -this.ui.width())  * 0.5
-		});
-		this.draggable();
+/**
+ * Key Listener
+ *
+ * @param {object} event
+ * @return {boolean}
+ */
+Escape.onKeyDown = function onKeyDown( event )
+{
+    if (event.which === KEYS.ESCAPE) {
+        this.ui.toggle();
 
-		this.ui.find('.node').mousedown(function(event){
-			event.stopImmediatePropagation();
-			return false;
-		});
+        if (this.ui.is(':visible')) {
+            this.focus();
+        }
 
-		// Only used in specific case
-		this.ui.find('button').show();
-		this.ui.find('.resurection, .savepoint').hide();
+        event.stopImmediatePropagation();
+        return false;
+    }
 
-		this.ui.find('.sound').click(onToggleSoundUI);
-		this.ui.find('.graphics').click(onToggleGraphicUI);
-		this.ui.find('.resurection').click(function(){ Escape.onResurectionRequest(); });
-		this.ui.find('.savepoint').click(function(){ Escape.onReturnSavePointRequest(); });
-		this.ui.find('.charselect').click(function(){ Escape.onCharSelectionRequest(); });
-		this.ui.find('.hotkey').click(onToggleShortcutUI);
-		this.ui.find('.exit').click(function(){ Escape.onExitRequest(); });
-		this.ui.find('.cancel').click(function(){ Escape.ui.hide(); });
-	};
+    return true;
+};
 
 
-	/**
-	 * Window must not be visible once append
-	 * but need to be here to manage key event
-	 */
-	Escape.onAppend = function onAppend()
-	{
-		this.ui.hide();
-	};
+/**
+ * Click on Sound button, toggle the UI
+ */
+function onToggleSoundUI()
+{
+    if (!SoundOption.ui || !SoundOption.ui[0].parentNode) {
+        SoundOption.append();
+    }
+    else {
+        SoundOption.remove();
+    }
+}
 
 
-	/**
-	 * Reset buttons once UI is removed
-	 */
-	Escape.onRemove = function onRemove()
-	{
-		this.ui.hide();
-		this.ui.find('.resurection, .savepoint').hide();
-		this.ui.find('.graphics, .sound, .hotkey').show();
-	};
+/**
+ * Click on Graphic button, toggle the UI
+ */
+function onToggleGraphicUI()
+{
+    if (!GraphicsOption.ui || !GraphicsOption.ui[0].parentNode) {
+        GraphicsOption.append();
+    }
+    else {
+        GraphicsOption.remove();
+    }
+}
+
+/**
+ * Click on Shortcut button, toggle the UI
+ */
+function onToggleShortcutUI()
+{
+    if (!ShortCutOption.ui || !ShortCutOption.ui[0].parentNode) {
+        ShortCutOption.append();
+    }
+    else {
+        ShortCutOption.remove();
+    }
+}
 
 
-	/**
-	 * Key Listener
-	 *
-	 * @param {object} event
-	 * @return {boolean}
-	 */
-	Escape.onKeyDown = function onKeyDown( event )
-	{
-		if (event.which === KEYS.ESCAPE) {
-			this.ui.toggle();
-
-			if (this.ui.is(':visible')) {
-				this.focus();
-			}
-
-			event.stopImmediatePropagation();
-			return false;
-		}
-
-		return true;
-	};
+/**
+ * @var {function} callback when player want to resuret using Token of Siegfried
+ */
+Escape.onResurectionRequest = function onResurectionRequest(){};
 
 
-	/**
-	 * Click on Sound button, toggle the UI
-	 */
-	function onToggleSoundUI()
-	{
-		if (!SoundOption.ui || !SoundOption.ui[0].parentNode) {
-			SoundOption.append();
-		}
-		else {
-			SoundOption.remove();
-		}
-	}
+/**
+ * @var {function} callback to define to disconnect from game
+ */
+Escape.onExitRequest = function onExitRequest(){};
 
 
-	/**
-	 * Click on Graphic button, toggle the UI
-	 */
-	function onToggleGraphicUI()
-	{
-		if (!GraphicsOption.ui || !GraphicsOption.ui[0].parentNode) {
-			GraphicsOption.append();
-		}
-		else {
-			GraphicsOption.remove();
-		}
-	}
-	
-	/**
-	 * Click on Shortcut button, toggle the UI
-	 */
-	function onToggleShortcutUI()
-	{
-		if (!ShortCutOption.ui || !ShortCutOption.ui[0].parentNode) {
-			ShortCutOption.append();
-		}
-		else {
-			ShortCutOption.remove();
-		}
-	}
+/**
+ * @var {function} callback when player want to resurect using Token of Siegfried
+ */
+Escape.onReturnSavePointRequest = function onReturnSavePointRequest(){};
 
 
-	/**
-	 * @var {function} callback when player want to resuret using Token of Siegfried
-	 */
-	Escape.onResurectionRequest = function onResurectionRequest(){};
+/**
+ * @var {function} callback when player want to return to char selection
+ */
+Escape.onCharSelectionRequest = function onCharSelectionRequest(){};
 
 
-	/**
-	 * @var {function} callback to define to disconnect from game
-	 */
-	Escape.onExitRequest = function onExitRequest(){};
-
-
-	/**
-	 * @var {function} callback when player want to resurect using Token of Siegfried
-	 */
-	Escape.onReturnSavePointRequest = function onReturnSavePointRequest(){};
-
-
-	/**
-	 * @var {function} callback when player want to return to char selection
-	 */
-	Escape.onCharSelectionRequest = function onCharSelectionRequest(){};
-
-
-	/**
-	 * Create component and export it
-	 */
-	return UIManager.addComponent(Escape);
-});
+export default UIManager.addComponent(Escape);

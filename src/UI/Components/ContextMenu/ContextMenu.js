@@ -5,106 +5,108 @@
  *
  * This file is part of ROBrowser, (http://www.robrowser.com/).
  */
-define(function(require)
+/**
+ * UI/Components/ContextMenu/ContextMenu.js
+ *
+ * Manage ContextMenu (right click on a target)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ */
+'use strict';
+
+
+/**
+ * Dependencies
+ */
+import jQuery from 'Utils/jquery';
+
+import Renderer from 'Renderer/Renderer';
+import Mouse from 'Controls/MouseEventHandler';
+import UIManager from 'UI/UIManager';
+import UIComponent from 'UI/UIComponent';
+import cssText from 'text!./ContextMenu.css';
+
+
+/**
+ * Create Component
+ */
+var ContextMenu = new UIComponent( 'ContextMenu', '<div id="ContextMenu"><div class="menu"/></div>', cssText);
+
+
+/**
+ * Initialize event handler
+ */
+ContextMenu.init = function init()
 {
-	'use strict';
+    this.ui.mousedown(function(){
+        ContextMenu.remove();
+    });
+
+    this.ui.find('.menu').on('mousedown', 'div', function(event){
+        event.stopImmediatePropagation();
+        return false;
+    });
+};
 
 
-	/**
-	 * Dependencies
-	 */
-	var jQuery       = require('Utils/jquery');
-	var Renderer     = require('Renderer/Renderer');
-	var Mouse        = require('Controls/MouseEventHandler');
-	var UIManager    = require('UI/UIManager');
-	var UIComponent  = require('UI/UIComponent');
-	var cssText      = require('text!./ContextMenu.css');
+/**
+ * Initialize UI
+ */
+ContextMenu.onAppend = function onAppend()
+{
+    var menu   = this.ui.find('.menu');
+    var width  = menu.width();
+    var height = menu.height();
+    var x      = Mouse.screen.x;
+    var y      = Mouse.screen.y;
+
+    if (Mouse.screen.x + width > Renderer.width) {
+        x = Mouse.screen.x - width;
+    }
+
+    if (Mouse.screen.y + height > Renderer.height) {
+        y = Mouse.screen.y - height;
+    }
+
+    menu.css({ top:y, left:x });
+};
 
 
-	/**
-	 * Create Component
-	 */
-	var ContextMenu = new UIComponent( 'ContextMenu', '<div id="ContextMenu"><div class="menu"/></div>', cssText);
+/**
+ * Clean UP UI
+ */
+ContextMenu.onRemove = function onRemove()
+{
+    this.ui.find('.menu').empty();
+};
 
 
-	/**
-	 * Initialize event handler
-	 */
-	ContextMenu.init = function init()
-	{
-		this.ui.mousedown(function(){
-			ContextMenu.remove();
-		});
-
-		this.ui.find('.menu').on('mousedown', 'div', function(event){
-			event.stopImmediatePropagation();
-			return false;
-		});
-	};
-
-
-	/**
-	 * Initialize UI
-	 */
-	ContextMenu.onAppend = function onAppend()
-	{
-		var menu   = this.ui.find('.menu');
-		var width  = menu.width();
-		var height = menu.height();
-		var x      = Mouse.screen.x;
-		var y      = Mouse.screen.y;
-
-		if (Mouse.screen.x + width > Renderer.width) {
-			x = Mouse.screen.x - width;
-		}
-
-		if (Mouse.screen.y + height > Renderer.height) {
-			y = Mouse.screen.y - height;
-		}
-
-		menu.css({ top:y, left:x });
-	};
+/**
+ * Add a clickable node to the context menu
+ *
+ * @param {string} text
+ * @param {function} callback once clicked
+ */
+ContextMenu.addElement = function addElement(text, callback)
+{
+    this.ui.find('.menu').append(jQuery('<div/>').text(text).click(function(){
+        ContextMenu.remove();
+        callback();
+    }));
+};
 
 
-	/**
-	 * Clean UP UI
-	 */
-	ContextMenu.onRemove = function onRemove()
-	{
-		this.ui.find('.menu').empty();
-	};
+/**
+ * Add a delimiter to the links
+ */
+ContextMenu.nextGroup = function nextGroup()
+{
+    this.ui.find('.menu').append('<hr/>');
+};
 
 
-	/**
-	 * Add a clickable node to the context menu
-	 *
-	 * @param {string} text
-	 * @param {function} callback once clicked
-	 */
-	ContextMenu.addElement = function addElement(text, callback)
-	{
-		this.ui.find('.menu').append(jQuery('<div/>').text(text).click(function(){
-			ContextMenu.remove();
-			callback();
-		}));
-	};
+// Prepare the context menu to avoid problem
+ContextMenu.prepare();
 
 
-	/**
-	 * Add a delimiter to the links
-	 */
-	ContextMenu.nextGroup = function nextGroup()
-	{
-		this.ui.find('.menu').append('<hr/>');
-	};
-
-
-	// Prepare the context menu to avoid problem
-	ContextMenu.prepare();
-
-
-	/**
-	 * Create component and export it
-	 */
-	return UIManager.addComponent(ContextMenu);
-});
+export default UIManager.addComponent(ContextMenu);

@@ -9,6 +9,83 @@
  */
 
 // Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
+/**
+ * App/ModelViewer.js
+ *
+ * Show Gravity models (rsm files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ */
+
+// Errors Handler (hack)
 require.onError = function (err) {
 	'use strict';
 

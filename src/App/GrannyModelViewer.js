@@ -10,6 +10,90 @@
  */
 
 // Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
+/**
+ * App/GrannyModelViewer.js
+ *
+ * Show Gravity Granny3D models (gr2 files)
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ *
+ * @author Vincent Thibault
+ * @author Liam Mitchell
+ */
+
+// Errors Handler (hack)
 require.onError = function (err) {
 	'use strict';
 

@@ -6,192 +6,195 @@
  * This file is part of ROBrowser, (http://www.robrowser.com/).
  */
 
-define(function( require )
+/**
+ * Engine/MapEngine/Storage.js
+ *
+ * Manage Storage sockets
+ *
+ * This file is part of ROBrowser, (http://www.robrowser.com/).
+ */
+
+'use strict';
+
+
+/**
+ * Load dependencies
+ */
+import jQuery from 'Utils/jquery';
+
+import Network from 'Network/NetworkManager';
+import PACKETVER from 'Network/PacketVerManager';
+import PACKET from 'Network/PacketStructure';
+import Storage from 'UI/Components/Storage/Storage';
+
+
+/*
+ * This will hold the items to append to storage
+ * Since STORE_EQUIPMENT_ITEMLIST packets are sent before NOTIFY_STOREITEM_COUNTINFO
+ * And they are only sent if theres item's on storage!
+ */
+var itemBuffer = [];
+
+
+/**
+ * Get storage informations
+ *
+ * @param {object} pkt - PACKET.ZC.NOTIFY_STOREITEM_COUNTINFO
+ */
+function onStorageInfo( pkt )
 {
-	'use strict';
+    if(!(Storage.__loaded && Storage.__active)) { 
+        Storage.append();
+    }
+    Storage.setItemInfo( pkt.curCount, pkt.maxCount );
+    Storage.setItems( itemBuffer );
+
+    itemBuffer = [];
+}
 
 
-	/**
-	 * Load dependencies
-	 */
-	var jQuery        = require('Utils/jquery');
-	var Network       = require('Network/NetworkManager');
-	var PACKETVER   = require('Network/PacketVerManager');
-	var PACKET        = require('Network/PacketStructure');
-	var Storage       = require('UI/Components/Storage/Storage');
+/**
+ * Add items to storage
+ *
+ * @param {object} pkt - PACKET.ZC.STORE_EQUIPMENT_ITEMLIST3
+ */
+function onStorageList( pkt )
+{
+    itemBuffer = itemBuffer.concat( pkt.ItemInfo || pkt.itemInfo );
+}
 
 
-	/*
-	 * This will hold the items to append to storage
-	 * Since STORE_EQUIPMENT_ITEMLIST packets are sent before NOTIFY_STOREITEM_COUNTINFO
-	 * And they are only sent if theres item's on storage!
-	 */
-	var itemBuffer = [];
+/**
+ * Receive update from server to add item into the storage
+ *
+ * @param {object} pkt - PACKET.ZC.ADD_ITEM_TO_STORE
+ */
+function onStorageItemAdded( pkt )
+{
+    Storage.addItem(jQuery.extend({}, pkt));
+}
 
 
-	/**
-	 * Get storage informations
-	 *
-	 * @param {object} pkt - PACKET.ZC.NOTIFY_STOREITEM_COUNTINFO
-	 */
-	function onStorageInfo( pkt )
-	{
-		if(!(Storage.__loaded && Storage.__active)) { 
-			Storage.append();
-		}
-		Storage.setItemInfo( pkt.curCount, pkt.maxCount );
-		Storage.setItems( itemBuffer );
-
-		itemBuffer = [];
-	}
+/**
+ * Remove item from storage
+ *
+ * @param {object} pkt - PACKET.ZC.DELETE_ITEM_FROM_STORE
+ */
+function onStorageItemRemoved( pkt )
+{
+    Storage.removeItem( pkt.index, pkt.count );
+}
 
 
-	/**
-	 * Add items to storage
-	 *
-	 * @param {object} pkt - PACKET.ZC.STORE_EQUIPMENT_ITEMLIST3
-	 */
-	function onStorageList( pkt )
-	{
-		itemBuffer = itemBuffer.concat( pkt.ItemInfo || pkt.itemInfo );
-	}
+/**
+ * Server want you to close the storage
+ *
+ * @param {object} pkt - PACKET.ZC.CLOSE_STORE
+ */
+function onStorageClose()
+{
+    Storage.remove();
+}
 
 
-	/**
-	 * Receive update from server to add item into the storage
-	 *
-	 * @param {object} pkt - PACKET.ZC.ADD_ITEM_TO_STORE
-	 */
-	function onStorageItemAdded( pkt )
-	{
-		Storage.addItem(jQuery.extend({}, pkt));
-	}
+/**
+ * Send storage close
+ * PACKET.CZ.CLOSE_STORE
+ */
+Storage.onClosePressed = function onClosePressed()
+{
+    var pkt = new PACKET.CZ.CLOSE_STORE();
+    Network.sendPacket( pkt );
+
+    Storage.remove();
+};
 
 
-	/**
-	 * Remove item from storage
-	 *
-	 * @param {object} pkt - PACKET.ZC.DELETE_ITEM_FROM_STORE
-	 */
-	function onStorageItemRemoved( pkt )
-	{
-		Storage.removeItem( pkt.index, pkt.count );
-	}
+/**
+ * Send item to storage
+ * PACKET.CZ.MOVE_ITEM_FROM_BODY_TO_STORE
+ */
+Storage.reqAddItem = function ReqAddItem( index, count )
+{
+    if (count <= 0) {
+        return;
+    }
+
+    var pkt;
+    if(PACKETVER.value >= 20180307) {
+        pkt   = new PACKET.CZ.MOVE_ITEM_FROM_BODY_TO_STORE2();
+    } else {
+        pkt   = new PACKET.CZ.MOVE_ITEM_FROM_BODY_TO_STORE();
+    }
+    pkt.index = index;
+    pkt.count = count;
+    Network.sendPacket( pkt );
+};
 
 
-	/**
-	 * Server want you to close the storage
-	 *
-	 * @param {object} pkt - PACKET.ZC.CLOSE_STORE
-	 */
-	function onStorageClose()
-	{
-		Storage.remove();
-	}
+Storage.reqAddItemFromCart = function reqAddItemFromCart( index, count )
+{
+    if (count <= 0) {
+        return;
+    }
+
+    var pkt   = new PACKET.CZ.MOVE_ITEM_FROM_CART_TO_STORE();
+    pkt.index = index;
+    pkt.count = count;
+    Network.sendPacket( pkt );
+};
 
 
-	/**
-	 * Send storage close
-	 * PACKET.CZ.CLOSE_STORE
-	 */
-	Storage.onClosePressed = function onClosePressed()
-	{
-		var pkt = new PACKET.CZ.CLOSE_STORE();
-		Network.sendPacket( pkt );
+/**
+ * Send frm storage to inventory
+ * PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_BODY
+ */
+Storage.reqRemoveItem = function ReqRemoveItem( index, count )
+{
+    if (count <= 0) {
+        return;
+    }
 
-		Storage.remove();
-	};
+    var pkt;
+    if(PACKETVER.value >= 20180307) {
+        pkt   = new PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_BODY2();
+    } else {
+        pkt   = new PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_BODY();
+    }
+    pkt.index = index;
+    pkt.count = count;
+    Network.sendPacket( pkt );
+};
 
+Storage.reqMoveItemToCart = function reqMoveItemToCart( index, count )
+{
+    if (count <= 0) {
+        return;
+    }
 
-	/**
-	 * Send item to storage
-	 * PACKET.CZ.MOVE_ITEM_FROM_BODY_TO_STORE
-	 */
-	Storage.reqAddItem = function ReqAddItem( index, count )
-	{
-		if (count <= 0) {
-			return;
-		}
-
-		var pkt;
-		if(PACKETVER.value >= 20180307) {
-			pkt   = new PACKET.CZ.MOVE_ITEM_FROM_BODY_TO_STORE2();
-		} else {
-			pkt   = new PACKET.CZ.MOVE_ITEM_FROM_BODY_TO_STORE();
-		}
-		pkt.index = index;
-		pkt.count = count;
-		Network.sendPacket( pkt );
-	};
-
-
-	Storage.reqAddItemFromCart = function reqAddItemFromCart( index, count )
-	{
-		if (count <= 0) {
-			return;
-		}
-
-		var pkt   = new PACKET.CZ.MOVE_ITEM_FROM_CART_TO_STORE();
-		pkt.index = index;
-		pkt.count = count;
-		Network.sendPacket( pkt );
-	};
+    var pkt   = new PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_CART();
+    pkt.index = index;
+    pkt.count = count;
+    Network.sendPacket( pkt );
+};
 
 
-	/**
-	 * Send frm storage to inventory
-	 * PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_BODY
-	 */
-	Storage.reqRemoveItem = function ReqRemoveItem( index, count )
-	{
-		if (count <= 0) {
-			return;
-		}
-
-		var pkt;
-		if(PACKETVER.value >= 20180307) {
-			pkt   = new PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_BODY2();
-		} else {
-			pkt   = new PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_BODY();
-		}
-		pkt.index = index;
-		pkt.count = count;
-		Network.sendPacket( pkt );
-	};
-
-	Storage.reqMoveItemToCart = function reqMoveItemToCart( index, count )
-	{
-		if (count <= 0) {
-			return;
-		}
-
-		var pkt   = new PACKET.CZ.MOVE_ITEM_FROM_STORE_TO_CART();
-		pkt.index = index;
-		pkt.count = count;
-		Network.sendPacket( pkt );
-	};
-
-
-	/**
-	 * Initialize
-	 */
-	return function StorageEngine()
-	{
-		Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST,      onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST2,     onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST3,     onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST4,     onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST,   onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST2,  onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST3,  onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST4,  onStorageList );
-		Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST5,  onStorageList );
-		Network.hookPacket( PACKET.ZC.NOTIFY_STOREITEM_COUNTINFO, onStorageInfo );
-		Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE,          onStorageItemAdded );
-		Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE2,         onStorageItemAdded );
-		Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE3,         onStorageItemAdded );
-		Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE4,         onStorageItemAdded );
-		Network.hookPacket( PACKET.ZC.CLOSE_STORE,                onStorageClose );
-		Network.hookPacket( PACKET.ZC.DELETE_ITEM_FROM_STORE,     onStorageItemRemoved );
-	};
-});
+export default function StorageEngine()
+{
+    Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST,      onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST2,     onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST3,     onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_NORMAL_ITEMLIST4,     onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST,   onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST2,  onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST3,  onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST4,  onStorageList );
+    Network.hookPacket( PACKET.ZC.STORE_EQUIPMENT_ITEMLIST5,  onStorageList );
+    Network.hookPacket( PACKET.ZC.NOTIFY_STOREITEM_COUNTINFO, onStorageInfo );
+    Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE,          onStorageItemAdded );
+    Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE2,         onStorageItemAdded );
+    Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE3,         onStorageItemAdded );
+    Network.hookPacket( PACKET.ZC.ADD_ITEM_TO_STORE4,         onStorageItemAdded );
+    Network.hookPacket( PACKET.ZC.CLOSE_STORE,                onStorageClose );
+    Network.hookPacket( PACKET.ZC.DELETE_ITEM_FROM_STORE,     onStorageItemRemoved );
+}

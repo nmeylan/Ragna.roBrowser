@@ -1,5 +1,3 @@
-define(function(){
-
 var html2canvas;
 
 /**
@@ -3234,5 +3232,4 @@ _html2canvas.Renderer.SVG = function( options ) {
 
 };
 }(window, document));
-	return html2canvas;
-});
+export default html2canvas;
