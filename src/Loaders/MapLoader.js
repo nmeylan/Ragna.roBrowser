@@ -38,7 +38,7 @@
  * @author Vincent Thibault
  */
 
-import FileManager from 'Core/FileManager';
+import FileManager  from '/src/Core/FileManager';
 
 'use strict';
 

@@ -16,10 +16,10 @@
  *
  * @author Vincent Thibault
  */
-import Preferences from 'Core/Preferences';
+import Preferences  from '/src/Core/Preferences';
 
-import KEYS from 'Controls/KeyEventHandler';
-import UIVersionManager from 'UI/UIVersionManager';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIVersionManager  from '/src/UI/UIVersionManager';
 
 var ShortCuts = {};
 ShortCuts.F1_1 =			{	init:{key: KEYS.F1,		alt: false,	ctrl: false,	shift: false},	cust: false,	component:'ShortCut',			cmd:'EXECUTE0'				};

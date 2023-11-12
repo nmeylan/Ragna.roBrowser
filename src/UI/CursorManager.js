@@ -12,14 +12,14 @@
 
 
 // Load dependencies
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Client from 'Core/Client';
-import MemoryManager from 'Core/MemoryManager';
-import Graphics from 'Preferences/Graphics';
-import Sprite from 'Loaders/Sprite';
-import Action from 'Loaders/Action';
-import Preferences from 'Preferences/Controls';
+import Client  from '/src/Core/Client';
+import MemoryManager  from '/src/Core/MemoryManager';
+import Graphics  from '/src/Preferences/Graphics';
+import Sprite  from '/src/Loaders/Sprite';
+import Action  from '/src/Loaders/Action';
+import Preferences  from '/src/Preferences/Controls';
 var getModule     = require;
 
 

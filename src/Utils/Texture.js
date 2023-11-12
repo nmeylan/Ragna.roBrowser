@@ -22,7 +22,7 @@
  * @author Vincent Thibault
  */
 
-import Targa from 'Loaders/Targa';
+import Targa  from '/src/Loaders/Targa';
 
 'use strict';
 

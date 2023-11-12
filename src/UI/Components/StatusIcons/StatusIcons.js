@@ -22,16 +22,16 @@
 /**
  * Dependencies
  */
-import StatusTable from 'DB/Status/StatusInfo';
+import StatusTable  from '/src/DB/Status/StatusInfo';
 
-import DB from 'DB/DBManager';
-import jQuery from 'Utils/jquery';
-import Texture from 'Utils/Texture';
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import cssText from 'text!./StatusIcons.css';
+import DB  from '/src/DB/DBManager';
+import jQuery  from '/src/Utils/jquery';
+import Texture  from '/src/Utils/Texture';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import cssText  from './StatusIcons.css';
 
 
 /**

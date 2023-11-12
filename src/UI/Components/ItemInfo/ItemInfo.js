@@ -22,26 +22,26 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import ItemType from 'DB/Items/ItemType';
-import RandomOption from 'DB/Items/ItemRandomOptionTable';
-import Client from 'Core/Client';
-import KEYS from 'Controls/KeyEventHandler';
-import CardIllustration from 'UI/Components/CardIllustration/CardIllustration';
-import UIManager from 'UI/UIManager';
-import Mouse from 'Controls/MouseEventHandler';
-import UIComponent from 'UI/UIComponent';
-import MakeReadBook from 'UI/Components/MakeReadBook/MakeReadBook';
-import Renderer from 'Renderer/Renderer';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Sprite from 'Loaders/Sprite';
-import Action from 'Loaders/Action';
-import htmlText from 'text!./ItemInfo.html';
-import cssText from 'text!./ItemInfo.css';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
+import DB  from '/src/DB/DBManager';
+import ItemType  from '/src/DB/Items/ItemType';
+import RandomOption  from '/src/DB/Items/ItemRandomOptionTable';
+import Client  from '/src/Core/Client';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import CardIllustration  from '/src/UI/Components/CardIllustration/CardIllustration';
+import UIManager  from '/src/UI/UIManager';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIComponent  from '/src/UI/UIComponent';
+import MakeReadBook  from '/src/UI/Components/MakeReadBook/MakeReadBook';
+import Renderer  from '/src/Renderer/Renderer';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Sprite  from '/src/Loaders/Sprite';
+import Action  from '/src/Loaders/Action';
+import htmlText  from './ItemInfo.html';
+import cssText  from './ItemInfo.css';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
 var getModule     = require;
 
 

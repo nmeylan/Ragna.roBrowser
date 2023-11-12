@@ -22,12 +22,12 @@
 /**
  * Dependencies
  */
-import Client from 'Core/Client';
+import Client  from '/src/Core/Client';
 
-import jQuery from 'Utils/jquery';
-import html2canvas from 'Utils/html2canvas';
-import KEYS from 'Controls/KeyEventHandler';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
+import jQuery  from '/src/Utils/jquery';
+import html2canvas  from '/src/Utils/html2canvas';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
 
 
 /**

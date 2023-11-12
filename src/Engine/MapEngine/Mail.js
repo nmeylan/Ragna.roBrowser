@@ -11,13 +11,13 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Mail from 'UI/Components/Mail/Mail';
-import ReadMail from 'UI/Components/Mail/ReadMail';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Mail  from '/src/UI/Components/Mail/Mail';
+import ReadMail  from '/src/UI/Components/Mail/ReadMail';
 
 
 /**

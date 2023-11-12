@@ -24,13 +24,13 @@
 /**
  * Load dependencies
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import WeatherTable from 'DB/Effects/WeatherEffect';
-import Client from 'Core/Client';
-import Session from 'Engine/SessionStorage';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import { vec3 } from 'Utils/gl-matrix';
+import WeatherTable  from '/src/DB/Effects/WeatherEffect';
+import Client  from '/src/Core/Client';
+import Session  from '/src/Engine/SessionStorage';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import { vec3 }  from '/src/Utils/gl-matrix';
 
 
 /**

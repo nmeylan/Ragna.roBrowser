@@ -16,7 +16,7 @@
  *
  * @author Vincent Thibault
  */
-import Preferences from 'Core/Preferences';
+import Preferences  from '/src/Core/Preferences';
 
 'use strict';
 

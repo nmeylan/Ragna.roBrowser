@@ -26,21 +26,21 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import ItemType from 'DB/Items/ItemType';
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import ItemInfo from 'UI/Components/ItemInfo/ItemInfo';
-import Session from 'Engine/SessionStorage';
-import htmlText from 'text!./CartItems.html';
-import cssText from 'text!./CartItems.css';
+import ItemType  from '/src/DB/Items/ItemType';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import ItemInfo  from '/src/UI/Components/ItemInfo/ItemInfo';
+import Session  from '/src/Engine/SessionStorage';
+import htmlText  from './CartItems.html';
+import cssText  from './CartItems.css';
 var getModule          = require;
 
 

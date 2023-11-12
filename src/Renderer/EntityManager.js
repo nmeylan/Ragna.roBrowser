@@ -11,14 +11,14 @@
 
 
 // Load dependencies
-import Session from 'Engine/SessionStorage';
+import Session  from '/src/Engine/SessionStorage';
 
-import Entity from './Entity/Entity';
-import SpriteRenderer from './SpriteRenderer';
-import Mouse from 'Controls/MouseEventHandler';
-import KEYS from 'Controls/KeyEventHandler';
-import PathFinding from 'Utils/PathFinding';
-import Altitude from 'Renderer/Map/Altitude';
+import Entity   from '/src/Entity/Entity';
+import SpriteRenderer   from '/src/SpriteRenderer';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import PathFinding  from '/src/Utils/PathFinding';
+import Altitude  from '/src/Renderer/Map/Altitude';
 
 var _list = [];
 

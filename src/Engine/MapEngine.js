@@ -15,32 +15,32 @@
 /**
  * Load dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import Configs from 'Core/Configs';
-import SoundManager from 'Audio/SoundManager';
-import BGM from 'Audio/BGM';
-import Events from 'Core/Events';
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import Renderer from 'Renderer/Renderer';
-import Camera from 'Renderer/Camera';
-import MapRenderer from 'Renderer/MapRenderer';
-import EntityManager from 'Renderer/EntityManager';
-import Entity from 'Renderer/Entity/Entity';
-import Altitude from 'Renderer/Map/Altitude';
-import MapControl from 'Controls/MapControl';
-import Mouse from 'Controls/MouseEventHandler';
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import EffectManager from 'Renderer/EffectManager';
-import Background from 'UI/Background';
-import Escape from 'UI/Components/Escape/Escape';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import ChatBoxSettings from 'UI/Components/ChatBoxSettings/ChatBoxSettings';
+import DB  from '/src/DB/DBManager';
+import Configs  from '/src/Core/Configs';
+import SoundManager  from '/src/Audio/SoundManager';
+import BGM  from '/src/Audio/BGM';
+import Events  from '/src/Core/Events';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Renderer  from '/src/Renderer/Renderer';
+import Camera  from '/src/Renderer/Camera';
+import MapRenderer  from '/src/Renderer/MapRenderer';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Entity  from '/src/Renderer/Entity/Entity';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import MapControl  from '/src/Controls/MapControl';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import EffectManager  from '/src/Renderer/EffectManager';
+import Background  from '/src/UI/Background';
+import Escape  from '/src/UI/Components/Escape/Escape';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import ChatBoxSettings  from '/src/UI/Components/ChatBoxSettings/ChatBoxSettings';
 
 var MiniMap;
 if(PACKETVER.value >= 20180124) {
@@ -53,7 +53,7 @@ if(Configs.get('enableCheckAttendance') && PACKETVER.value >= 20180307) {
     var CheckAttendance  = require('UI/Components/CheckAttendance/CheckAttendance');
 }
 
-import UIVersionManager from 'UI/UIVersionManager';
+import UIVersionManager  from '/src/UI/UIVersionManager';
 
 var BasicInfo;
 if (UIVersionManager.getBasicInfoVersion() === 0) {
@@ -72,25 +72,25 @@ if (UIVersionManager.getSkillListVersion() === 0) {
     SkillList = require('UI/Components/SkillList/SkillList');
 }
 
-import WinStats from 'UI/Components/WinStats/WinStats';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import CartItems from 'UI/Components/CartItems/CartItems';
-import Vending from 'UI/Components/Vending/Vending';
-import ChangeCart from 'UI/Components/ChangeCart/ChangeCart';
-import ShortCut from 'UI/Components/ShortCut/ShortCut';
-import Equipment from 'UI/Components/Equipment/Equipment';
-import ShortCuts from 'UI/Components/ShortCuts/ShortCuts';
-import StatusIcons from 'UI/Components/StatusIcons/StatusIcons';
-import ChatRoomCreate from 'UI/Components/ChatRoomCreate/ChatRoomCreate';
-import Emoticons from 'UI/Components/Emoticons/Emoticons';
-import FPS from 'UI/Components/FPS/FPS';
-import PartyFriends from 'UI/Components/PartyFriends/PartyFriends';
-import Guild from 'UI/Components/Guild/Guild';
-import WorldMap from 'UI/Components/WorldMap/WorldMap';
-import SkillListMER from 'UI/Components/SkillListMER/SkillListMER';
-import MobileUI from 'UI/Components/MobileUI/MobileUI';
-import CashShop from 'UI/Components/CashShop/CashShop';
-import Bank from 'UI/Components/Bank/Bank';
+import WinStats  from '/src/UI/Components/WinStats/WinStats';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import CartItems  from '/src/UI/Components/CartItems/CartItems';
+import Vending  from '/src/UI/Components/Vending/Vending';
+import ChangeCart  from '/src/UI/Components/ChangeCart/ChangeCart';
+import ShortCut  from '/src/UI/Components/ShortCut/ShortCut';
+import Equipment  from '/src/UI/Components/Equipment/Equipment';
+import ShortCuts  from '/src/UI/Components/ShortCuts/ShortCuts';
+import StatusIcons  from '/src/UI/Components/StatusIcons/StatusIcons';
+import ChatRoomCreate  from '/src/UI/Components/ChatRoomCreate/ChatRoomCreate';
+import Emoticons  from '/src/UI/Components/Emoticons/Emoticons';
+import FPS  from '/src/UI/Components/FPS/FPS';
+import PartyFriends  from '/src/UI/Components/PartyFriends/PartyFriends';
+import Guild  from '/src/UI/Components/Guild/Guild';
+import WorldMap  from '/src/UI/Components/WorldMap/WorldMap';
+import SkillListMER  from '/src/UI/Components/SkillListMER/SkillListMER';
+import MobileUI  from '/src/UI/Components/MobileUI/MobileUI';
+import CashShop  from '/src/UI/Components/CashShop/CashShop';
+import Bank  from '/src/UI/Components/Bank/Bank';
 if(Configs.get('enableMapName')){
     var MapName          = require('UI/Components/MapName/MapName');
 }
@@ -98,7 +98,7 @@ if(PACKETVER.value >= 20180307) {
     var Quest            = require('UI/Components/Quest/Quest');
     var QuestWindow      = require('UI/Components/Quest/QuestWindow');
 }
-import PluginManager from 'Plugins/PluginManager';
+import PluginManager  from '/src/Plugins/PluginManager';
 
 /**
  * @var {string mapname}

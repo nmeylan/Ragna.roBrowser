@@ -22,16 +22,16 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Events from 'Core/Events';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./ItemObtain.html';
-import cssText from 'text!./ItemObtain.css';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Events  from '/src/Core/Events';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './ItemObtain.html';
+import cssText  from './ItemObtain.css';
 
 
 /**

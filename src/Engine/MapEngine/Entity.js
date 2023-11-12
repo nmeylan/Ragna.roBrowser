@@ -12,34 +12,34 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import SkillId from 'DB/Skills/SkillConst';
-import SkillInfo from 'DB/Skills/SkillInfo';
-import StatusConst from 'DB/Status/StatusConst';
-import StatusState from 'DB/Status/StatusState';
-import Emotions from 'DB/Emotions';
-import SkillEffect from 'DB/Skills/SkillEffect';
-import SkillActionTable from 'DB/Skills/SkillAction';
-import EffectConst from 'DB/Effects/EffectConst';
-import PetMessageConst from 'DB/Pets/PetMessageConst';
-import Sound from 'Audio/SoundManager';
-import Events from 'Core/Events';
-import Guild from 'Engine/MapEngine/Guild';
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import Altitude from 'Renderer/Map/Altitude';
-import Renderer from 'Renderer/Renderer';
-import EntityManager from 'Renderer/EntityManager';
-import Entity from 'Renderer/Entity/Entity';
-import EffectManager from 'Renderer/EffectManager';
-import Damage from 'Renderer/Effects/Damage';
-import MagicTarget from 'Renderer/Effects/MagicTarget';
-import LockOnTarget from 'Renderer/Effects/LockOnTarget';
-import MagicRing from 'Renderer/Effects/MagicRing';
-import UIVersionManager from 'UI/UIVersionManager';
+import SkillId  from '/src/DB/Skills/SkillConst';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import StatusConst  from '/src/DB/Status/StatusConst';
+import StatusState  from '/src/DB/Status/StatusState';
+import Emotions  from '/src/DB/Emotions';
+import SkillEffect  from '/src/DB/Skills/SkillEffect';
+import SkillActionTable  from '/src/DB/Skills/SkillAction';
+import EffectConst  from '/src/DB/Effects/EffectConst';
+import PetMessageConst  from '/src/DB/Pets/PetMessageConst';
+import Sound  from '/src/Audio/SoundManager';
+import Events  from '/src/Core/Events';
+import Guild  from '/src/Engine/MapEngine/Guild';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Renderer  from '/src/Renderer/Renderer';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Entity  from '/src/Renderer/Entity/Entity';
+import EffectManager  from '/src/Renderer/EffectManager';
+import Damage  from '/src/Renderer/Effects/Damage';
+import MagicTarget  from '/src/Renderer/Effects/MagicTarget';
+import LockOnTarget  from '/src/Renderer/Effects/LockOnTarget';
+import MagicRing  from '/src/Renderer/Effects/MagicRing';
+import UIVersionManager  from '/src/UI/UIVersionManager';
 
 var BasicInfo;
 if (UIVersionManager.getBasicInfoVersion() === 0) {
@@ -52,19 +52,19 @@ if (UIVersionManager.getBasicInfoVersion() === 0) {
     BasicInfo = require('UI/Components/BasicInfo/BasicInfo');
 }
 
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import ChatRoom from 'UI/Components/ChatRoom/ChatRoom';
-import Escape from 'UI/Components/Escape/Escape';
-import HomunInformations from 'UI/Components/HomunInformations/HomunInformations';
-import Inventory from 'UI/Components/Inventory/Inventory';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import ChatRoom  from '/src/UI/Components/ChatRoom/ChatRoom';
+import Escape  from '/src/UI/Components/Escape/Escape';
+import HomunInformations  from '/src/UI/Components/HomunInformations/HomunInformations';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
 var MiniMap;
 if(PACKETVER.value >= 20180124) {
     MiniMap          = require('UI/Components/MiniMapV2/MiniMapV2');
 } else {
     MiniMap          = require('UI/Components/MiniMap/MiniMap');
 }
-import ShortCut from 'UI/Components/ShortCut/ShortCut';
-import StatusIcons from 'UI/Components/StatusIcons/StatusIcons';
+import ShortCut  from '/src/UI/Components/ShortCut/ShortCut';
+import StatusIcons  from '/src/UI/Components/StatusIcons/StatusIcons';
 
 // Excludes for skill name display
 var SkillNameDisplayExclude = [

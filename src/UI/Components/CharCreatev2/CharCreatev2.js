@@ -22,17 +22,17 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Renderer from 'Renderer/Renderer';
-import KEYS from 'Controls/KeyEventHandler';
-import Entity from 'Renderer/Entity/Entity';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./CharCreatev2.html';
-import cssText from 'text!./CharCreatev2.css';
-import Client from 'Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Entity  from '/src/Renderer/Entity/Entity';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './CharCreatev2.html';
+import cssText  from './CharCreatev2.css';
+import Client  from '/src/Core/Client';
 
 
 /**

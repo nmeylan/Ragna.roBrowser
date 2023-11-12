@@ -22,12 +22,12 @@
 /**
  * Import
  */
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 
-import Altitude from 'Renderer/Map/Altitude';
-import Session from 'Engine/SessionStorage';
-import Client from 'Core/Client';
-import glMatrix from 'Utils/gl-matrix';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Session  from '/src/Engine/SessionStorage';
+import Client  from '/src/Core/Client';
+import glMatrix  from '/src/Utils/gl-matrix';
 var vec3     = glMatrix.vec3;
 var mat4     = glMatrix.mat4;
 

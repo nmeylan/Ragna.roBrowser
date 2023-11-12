@@ -1,6 +1,6 @@
 'use strict';
 
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
 
 var _vertexShader = `

@@ -24,18 +24,18 @@
 /**
  * Load dependencies
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Configs from 'Core/Configs';
-import Client from 'Core/Client';
-import GrannyModel from 'Loaders/GrannyModel';
-import Renderer from 'Renderer/Renderer';
-import ModelRenderer from 'Renderer/Map/Models';
-import Camera from 'Renderer/Camera';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./GrannyModelViewer.html';
-import cssText from 'text!./GrannyModelViewer.css';
+import Configs  from '/src/Core/Configs';
+import Client  from '/src/Core/Client';
+import GrannyModel  from '/src/Loaders/GrannyModel';
+import Renderer  from '/src/Renderer/Renderer';
+import ModelRenderer  from '/src/Renderer/Map/Models';
+import Camera  from '/src/Renderer/Camera';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './GrannyModelViewer.html';
+import cssText  from './GrannyModelViewer.css';
 
 var mat4               = glMatrix.mat4;
 var mat3               = glMatrix.mat3;

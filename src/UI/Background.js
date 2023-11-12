@@ -13,10 +13,10 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
 
 
 /**

@@ -34,9 +34,9 @@
  *
  * @author Gulfaraz Rahman
  */
-import EffectConst from 'DB/Effects/EffectConst';
+import EffectConst  from '/src/DB/Effects/EffectConst';
 
-import MapPreferences from 'Preferences/Map';
+import MapPreferences  from '/src/Preferences/Map';
 'use strict';
 
 var normalEffects = [

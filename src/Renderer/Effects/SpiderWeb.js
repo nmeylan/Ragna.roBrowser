@@ -1,8 +1,8 @@
 "use strict";
 
-import exports from 'exports';
-import _WebGL from 'Utils/WebGL';
-import _Tiles from 'Renderer/Effects/Tiles';
+import exports  from '/src/exports';
+import _WebGL  from '/src/Utils/WebGL';
+import _Tiles  from '/src/Renderer/Effects/Tiles';
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

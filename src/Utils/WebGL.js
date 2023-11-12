@@ -46,7 +46,7 @@
  * @author Vincent Thibault
  */
 
-import Texture from 'Utils/Texture';
+import Texture  from '/src/Utils/Texture';
 
 'use strict';
 

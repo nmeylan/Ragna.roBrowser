@@ -18,7 +18,7 @@
  * @author Vincent Thibault
  */
 
-import JobId from './JobConst';
+import JobId   from './JobConst';
 
 "use strict";
 

@@ -20,15 +20,15 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Renderer from 'Renderer/Renderer';
-import Camera from 'Renderer/Camera';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Equipment from 'UI/Components/Equipment/Equipment';
-import jQuery from 'Utils/jquery';
+import Renderer  from '/src/Renderer/Renderer';
+import Camera  from '/src/Renderer/Camera';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Equipment  from '/src/UI/Components/Equipment/Equipment';
+import jQuery  from '/src/Utils/jquery';
 
 
 /**

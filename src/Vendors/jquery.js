@@ -18,6 +18,6 @@
  * @author Vincent Thibault
  */
 
-import jQuery from 'jquery';
+import jQuery  from '/src/Vendors/jquery';
 
 export default jQuery.noConflict( true );

@@ -22,18 +22,18 @@
 /**
  * Dependencies
  */
-import Preferences from 'Core/Preferences';
+import Preferences  from '/src/Core/Preferences';
 
-import jQuery from 'Utils/jquery';
-import Renderer from 'Renderer/Renderer';
-import Session from 'Engine/SessionStorage';
-import Mouse from 'Controls/MouseEventHandler';
-import KEYS from 'Controls/KeyEventHandler';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./ChatRoom.html';
-import cssText from 'text!./ChatRoom.css';
+import jQuery  from '/src/Utils/jquery';
+import Renderer  from '/src/Renderer/Renderer';
+import Session  from '/src/Engine/SessionStorage';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './ChatRoom.html';
+import cssText  from './ChatRoom.css';
 var getModule    = require;
 
 

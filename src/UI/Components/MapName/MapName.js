@@ -22,15 +22,15 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./MapName.html';
-import cssText from 'text!./MapName.css';
-import Client from 'Core/Client';
-import Events from 'Core/Events';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './MapName.html';
+import cssText  from './MapName.css';
+import Client  from '/src/Core/Client';
+import Events  from '/src/Core/Events';
 
 
 /**

@@ -28,14 +28,14 @@
 /**
  * Import dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Context from 'Core/Context';
-import Events from 'Core/Events';
-import Camera from 'Renderer/Camera';
-import Session from 'Engine/SessionStorage';
-import Mouse from 'Controls/MouseEventHandler';
-import KEYS from 'Controls/KeyEventHandler';
+import Context  from '/src/Core/Context';
+import Events  from '/src/Core/Events';
+import Camera  from '/src/Renderer/Camera';
+import Session  from '/src/Engine/SessionStorage';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
 
 
 /**

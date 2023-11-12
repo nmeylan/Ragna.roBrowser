@@ -1,12 +1,12 @@
-import EntityManager from 'Renderer/EntityManager';
-import Renderer from 'Renderer/Renderer';
-import fengari from 'Vendors/fengari-web';
-import Entity from 'Renderer/Entity/Entity';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Renderer  from '/src/Renderer/Renderer';
+import fengari  from '/src/Vendors/fengari-web';
+import Entity  from '/src/Renderer/Entity/Entity';
 'use strict';
 
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
 
 function AIDriver() {
 }

@@ -18,12 +18,12 @@
 /**
  * Dependencies
  */
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./MakeModelMessage.html';
-import cssText from 'text!./MakeModelMessage.css';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './MakeModelMessage.html';
+import cssText  from './MakeModelMessage.css';
 var getModule   = require;
 
 /**

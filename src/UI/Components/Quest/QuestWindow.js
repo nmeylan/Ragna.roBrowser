@@ -22,12 +22,12 @@
 /**
  * Dependencies
  */
-import Preferences from 'Core/Preferences';
+import Preferences  from '/src/Core/Preferences';
 
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./QuestWindow.html';
-import cssText from 'text!./QuestWindow.css';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './QuestWindow.html';
+import cssText  from './QuestWindow.css';
 
 var _preferences = Preferences.get('Quest', {
     x: 200,

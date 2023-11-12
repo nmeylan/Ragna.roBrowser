@@ -1,10 +1,10 @@
 "use strict";
 
-import exports from 'exports';
-import _WebGL from 'Utils/WebGL';
-import _Texture from 'Utils/Texture';
-import _glMatrix from 'Utils/gl-matrix';
-import _Client from 'Core/Client';
+import exports  from '/src/exports';
+import _WebGL  from '/src/Utils/WebGL';
+import _Texture  from '/src/Utils/Texture';
+import _glMatrix  from '/src/Utils/gl-matrix';
+import _Client  from '/src/Core/Client';
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

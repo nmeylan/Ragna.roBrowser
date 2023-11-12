@@ -22,22 +22,22 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import jQuery from 'Utils/jquery';
-import Preferences from 'Core/Preferences';
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import Session from 'Engine/SessionStorage';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import PartyHelper from 'UI/Components/PartyFriends/PartyHelper';
-import ContextMenu from 'UI/Components/ContextMenu/ContextMenu';
-import Mail from 'UI/Components/Mail/Mail';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import htmlText from 'text!./PartyFriends.html';
-import cssText from 'text!./PartyFriends.css';
+import jQuery  from '/src/Utils/jquery';
+import Preferences  from '/src/Core/Preferences';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import Session  from '/src/Engine/SessionStorage';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import PartyHelper  from '/src/UI/Components/PartyFriends/PartyHelper';
+import ContextMenu  from '/src/UI/Components/ContextMenu/ContextMenu';
+import Mail  from '/src/UI/Components/Mail/Mail';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import htmlText  from './PartyFriends.html';
+import cssText  from './PartyFriends.css';
 var getModule            = require;
 
 

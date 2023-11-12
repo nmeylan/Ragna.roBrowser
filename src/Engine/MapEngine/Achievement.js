@@ -22,9 +22,9 @@
 /**
  * Load dependencies
  */
-import Network from 'Network/NetworkManager';
+import Network  from '/src/Network/NetworkManager';
 
-import PACKET from 'Network/PacketStructure';
+import PACKET  from '/src/Network/PacketStructure';
 
 function onAllAchievementList(pkt){
     

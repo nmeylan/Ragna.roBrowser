@@ -20,9 +20,9 @@
  * @author Vincent Thibault
  */
 
-import JobId from './JobConst';
+import JobId   from './JobConst';
 
-import WeaponType from 'DB/Items/WeaponType';
+import WeaponType  from '/src/DB/Items/WeaponType';
 "use strict";
 
 

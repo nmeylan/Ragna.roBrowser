@@ -18,13 +18,13 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Renderer from 'Renderer/Renderer';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import cssText from 'text!./ContextMenu.css';
+import Renderer  from '/src/Renderer/Renderer';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import cssText  from './ContextMenu.css';
 
 
 /**

@@ -13,31 +13,31 @@
 
 
 // Load modules
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import Events from 'Core/Events';
-import Sound from 'Audio/SoundManager';
-import BGM from 'Audio/BGM';
-import Session from 'Engine/SessionStorage';
-import MapEngine from 'Engine/MapEngine';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import UIManager from 'UI/UIManager';
-import Background from 'UI/Background';
-import CharSelect from 'UI/Components/CharSelect/CharSelect';
-import CharSelect2 from 'UI/Components/CharSelect2/CharSelect2';
-import CharSelectV2 from 'UI/Components/CharSelectV2/CharSelectV2';
-import CharSelectV3 from 'UI/Components/CharSelectV3/CharSelectV3';
+import DB  from '/src/DB/DBManager';
+import Events  from '/src/Core/Events';
+import Sound  from '/src/Audio/SoundManager';
+import BGM  from '/src/Audio/BGM';
+import Session  from '/src/Engine/SessionStorage';
+import MapEngine  from '/src/Engine/MapEngine';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import UIManager  from '/src/UI/UIManager';
+import Background  from '/src/UI/Background';
+import CharSelect  from '/src/UI/Components/CharSelect/CharSelect';
+import CharSelect2  from '/src/UI/Components/CharSelect2/CharSelect2';
+import CharSelectV2  from '/src/UI/Components/CharSelectV2/CharSelectV2';
+import CharSelectV3  from '/src/UI/Components/CharSelectV3/CharSelectV3';
 var CharCreate;
 if (PACKETVER.value >= 20180124) {
     CharCreate = require('UI/Components/CharCreatev2/CharCreatev2');
 } else {
     CharCreate = require('UI/Components/CharCreate/CharCreate');
 }
-import PincodeWindow from 'UI/Components/PincodeWindow/PincodeWindow';
-import InputBox from 'UI/Components/InputBox/InputBox';
+import PincodeWindow  from '/src/UI/Components/PincodeWindow/PincodeWindow';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
 var getModule  = require;
 
 

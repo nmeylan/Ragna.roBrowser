@@ -34,9 +34,9 @@
  *
  * @author Vincent Thibault
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import SoundManager from 'Audio/SoundManager';
+import SoundManager  from '/src/Audio/SoundManager';
 'use strict';
 
 

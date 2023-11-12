@@ -20,12 +20,12 @@
 
 
 // Load dependencies
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Renderer from 'Renderer/Renderer';
-import Client from 'Core/Client';
-import DB from 'DB/DBManager';
-import EntityRoom from 'UI/Components/EntityRoom/EntityRoom';
+import Renderer  from '/src/Renderer/Renderer';
+import Client  from '/src/Core/Client';
+import DB  from '/src/DB/DBManager';
+import EntityRoom  from '/src/UI/Components/EntityRoom/EntityRoom';
 
 
 /**

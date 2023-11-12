@@ -38,9 +38,9 @@
  * @author Vincent Thibault
  */
 
-import BinaryReader from 'Utils/BinaryReader';
+import BinaryReader  from '/src/Utils/BinaryReader';
 
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 'use strict';
 
 

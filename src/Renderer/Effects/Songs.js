@@ -1,6 +1,6 @@
-import exports from 'exports';
-import _Tiles from 'Renderer/Effects/Tiles';
-import _FlatColorTile from 'Renderer/Effects/FlatColorTile';
+import exports  from '/src/exports';
+import _Tiles  from '/src/Renderer/Effects/Tiles';
+import _FlatColorTile  from '/src/Renderer/Effects/FlatColorTile';
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

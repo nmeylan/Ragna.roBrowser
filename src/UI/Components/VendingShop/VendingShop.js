@@ -26,23 +26,23 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import ItemType from 'DB/Items/ItemType';
-import jQuery from 'Utils/jquery';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Mouse from 'Controls/MouseEventHandler';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ItemInfo from 'UI/Components/ItemInfo/ItemInfo';
-import Session from 'Engine/SessionStorage';
-import Vending from 'UI/Components/Vending/Vending';
-import htmlText from 'text!./VendingShop.html';
-import cssText from 'text!./VendingShop.css';
+import ItemType  from '/src/DB/Items/ItemType';
+import jQuery  from '/src/Utils/jquery';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ItemInfo  from '/src/UI/Components/ItemInfo/ItemInfo';
+import Session  from '/src/Engine/SessionStorage';
+import Vending  from '/src/UI/Components/Vending/Vending';
+import htmlText  from './VendingShop.html';
+import cssText  from './VendingShop.css';
 var getModule          = require;
 
 

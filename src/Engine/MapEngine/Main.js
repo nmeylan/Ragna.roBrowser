@@ -24,23 +24,23 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import StatusProperty from 'DB/Status/StatusProperty';
-import EffectConst from 'DB/Effects/EffectConst';
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import PACKETVER from 'Network/PacketVerManager';
-import EntityManager from 'Renderer/EntityManager';
-import SkillActionTable from 'DB/Skills/SkillAction';
-import EffectManager from 'Renderer/EffectManager';
-import Renderer from 'Renderer/Renderer';
-import Damage from 'Renderer/Effects/Damage';
-import Altitude from 'Renderer/Map/Altitude';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import ChatRoom from 'UI/Components/ChatRoom/ChatRoom';
-import UIVersionManager from 'UI/UIVersionManager';
+import StatusProperty  from '/src/DB/Status/StatusProperty';
+import EffectConst  from '/src/DB/Effects/EffectConst';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import EntityManager  from '/src/Renderer/EntityManager';
+import SkillActionTable  from '/src/DB/Skills/SkillAction';
+import EffectManager  from '/src/Renderer/EffectManager';
+import Renderer  from '/src/Renderer/Renderer';
+import Damage  from '/src/Renderer/Effects/Damage';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import ChatRoom  from '/src/UI/Components/ChatRoom/ChatRoom';
+import UIVersionManager  from '/src/UI/UIVersionManager';
 
 var BasicInfo;
 if (UIVersionManager.getBasicInfoVersion() === 0) {
@@ -59,13 +59,13 @@ if (UIVersionManager.getSkillListVersion() === 0) {
     SkillList = require('UI/Components/SkillList/SkillList');
 }
 
-import WinStats from 'UI/Components/WinStats/WinStats';
-import Announce from 'UI/Components/Announce/Announce';
-import Equipment from 'UI/Components/Equipment/Equipment';
-import ChangeCart from 'UI/Components/ChangeCart/ChangeCart';
-import PartyUI from 'UI/Components/PartyFriends/PartyFriends';
-import PetMessageConst from 'DB/Pets/PetMessageConst';
-import uint32ToRGB from 'Utils/colors';
+import WinStats  from '/src/UI/Components/WinStats/WinStats';
+import Announce  from '/src/UI/Components/Announce/Announce';
+import Equipment  from '/src/UI/Components/Equipment/Equipment';
+import ChangeCart  from '/src/UI/Components/ChangeCart/ChangeCart';
+import PartyUI  from '/src/UI/Components/PartyFriends/PartyFriends';
+import PetMessageConst  from '/src/DB/Pets/PetMessageConst';
+import uint32ToRGB  from '/src/Utils/colors';
 
 
 /**

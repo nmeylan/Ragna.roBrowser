@@ -34,11 +34,11 @@
  *
  * @author Vincent Thibault
  */
-import Altitude from 'Renderer/Map/Altitude';
+import Altitude  from '/src/Renderer/Map/Altitude';
 
-import Client from 'Core/Client';
-import WebGL from 'Utils/WebGL';
-import Texture from 'Utils/Texture';
+import Client  from '/src/Core/Client';
+import WebGL  from '/src/Utils/WebGL';
+import Texture  from '/src/Utils/Texture';
 'use strict';
 
 

@@ -38,7 +38,7 @@
  * @author Vincent Thibault
  */
 
-import SC from './StatusConst';
+import SC   from '/src/StatusConst';
 
 "use strict";
 

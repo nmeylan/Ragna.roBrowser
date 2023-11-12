@@ -26,11 +26,11 @@
  *
  * @author MrUnzO
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import glMatrix from 'Utils/gl-matrix';
-import Client from 'Core/Client';
-import Texture from 'Utils/Texture';
+import glMatrix  from '/src/Utils/gl-matrix';
+import Client  from '/src/Core/Client';
+import Texture  from '/src/Utils/Texture';
 
 'use strict';
 

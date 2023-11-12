@@ -22,16 +22,16 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./WinLogin.html';
-import cssText from 'text!./WinLogin.css';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './WinLogin.html';
+import cssText  from './WinLogin.css';
 
 
 /**

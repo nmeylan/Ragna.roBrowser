@@ -34,7 +34,7 @@
  *
  * @author Vincent Thibault
  */
-import SoundManager from 'Audio/SoundManager';
+import SoundManager  from '/src/Audio/SoundManager';
 
 'use strict';
 

@@ -22,14 +22,14 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./PincodeWindow.html';
-import cssText from 'text!./PincodeWindow.css';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './PincodeWindow.html';
+import cssText  from './PincodeWindow.css';
 
 
 /**

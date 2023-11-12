@@ -22,10 +22,10 @@
 /**
  * Dependencies
  */
-import KEYS from 'Controls/KeyEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
 
-import Preferences from 'Preferences/ShortCutControls';
-import UIManager from 'UI/UIManager';
+import Preferences  from '/src/Preferences/ShortCutControls';
+import UIManager  from '/src/UI/UIManager';
 
 /**
  * Create Namespace

@@ -20,27 +20,27 @@
 
 
 // Load dependencies
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import PathFinding from 'Utils/PathFinding';
-import DB from 'DB/DBManager';
-import KEYS from 'Controls/KeyEventHandler';
-import Mouse from 'Controls/MouseEventHandler';
-import Preferences from 'Preferences/Controls';
-import Camera from 'Renderer/Camera';
-import Session from 'Engine/SessionStorage';
-import Friends from 'Engine/MapEngine/Friends';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import Network from 'Network/NetworkManager';
-import Cursor from 'UI/CursorManager';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import ChatRoom from 'UI/Components/ChatRoom/ChatRoom';
-import ContextMenu from 'UI/Components/ContextMenu/ContextMenu';
-import Pet from 'UI/Components/PetInformations/PetInformations';
-import Trade from 'UI/Components/Trade/Trade';
-import NpcBox from 'UI/Components/NpcBox/NpcBox';
-import Altitude from 'Renderer/Map/Altitude';
+import PathFinding  from '/src/Utils/PathFinding';
+import DB  from '/src/DB/DBManager';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Preferences  from '/src/Preferences/Controls';
+import Camera  from '/src/Renderer/Camera';
+import Session  from '/src/Engine/SessionStorage';
+import Friends  from '/src/Engine/MapEngine/Friends';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Network  from '/src/Network/NetworkManager';
+import Cursor  from '/src/UI/CursorManager';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import ChatRoom  from '/src/UI/Components/ChatRoom/ChatRoom';
+import ContextMenu  from '/src/UI/Components/ContextMenu/ContextMenu';
+import Pet  from '/src/UI/Components/PetInformations/PetInformations';
+import Trade  from '/src/UI/Components/Trade/Trade';
+import NpcBox  from '/src/UI/Components/NpcBox/NpcBox';
+import Altitude  from '/src/Renderer/Map/Altitude';
 var getModule   = require;
 
 

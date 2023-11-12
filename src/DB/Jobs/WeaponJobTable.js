@@ -18,9 +18,9 @@
  * @author Vincent Thibault
  */
 
-import JobId from './JobConst';
+import JobId   from './JobConst';
 
-import JobNameTable from './JobNameTable';
+import JobNameTable   from './JobNameTable';
 "use strict";
 
 var WeaponJobTable = {};

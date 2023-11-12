@@ -20,11 +20,11 @@
  * @author Vincent Thibault
  */
 
-import BinaryWriter from 'Utils/BinaryWriter';
+import BinaryWriter  from '/src/Utils/BinaryWriter';
 
-import PACKETVER from './PacketVerManager';
-import Struct from 'Utils/Struct';
-import Configs from 'Core/Configs';
+import PACKETVER   from './PacketVerManager';
+import Struct  from '/src/Utils/Struct';
+import Configs  from '/src/Core/Configs';
 'use strict';
 
 

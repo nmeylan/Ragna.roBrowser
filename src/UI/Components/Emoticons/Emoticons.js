@@ -22,18 +22,18 @@
 /**
  * Dependencies
  */
-import EmoticonsDB from 'DB/Emotions';
+import EmoticonsDB  from '/src/DB/Emotions';
 
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Entity from 'Renderer/Entity/Entity';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import htmlText from 'text!./Emoticons.html';
-import cssText from 'text!./Emoticons.css';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Entity  from '/src/Renderer/Entity/Entity';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import htmlText  from './Emoticons.html';
+import cssText  from './Emoticons.css';
 
 
 

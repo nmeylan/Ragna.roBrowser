@@ -22,24 +22,24 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import MonsterTable from 'DB/Monsters/MonsterTable';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import Session from 'Engine/SessionStorage';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import Equipment from 'UI/Components/Equipment/Equipment';
-import SkillList from 'UI/Components/SkillList/SkillList';
-import PartyFriends from 'UI/Components/PartyFriends/PartyFriends';
-import Guild from 'UI/Components/Guild/Guild';
-import Escape from 'UI/Components/Escape/Escape';
-import WorldMap from 'UI/Components/WorldMap/WorldMap';
-import htmlText from 'text!./BasicInfo.html';
-import cssText from 'text!./BasicInfo.css';
+import MonsterTable  from '/src/DB/Monsters/MonsterTable';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import Session  from '/src/Engine/SessionStorage';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import Equipment  from '/src/UI/Components/Equipment/Equipment';
+import SkillList  from '/src/UI/Components/SkillList/SkillList';
+import PartyFriends  from '/src/UI/Components/PartyFriends/PartyFriends';
+import Guild  from '/src/UI/Components/Guild/Guild';
+import Escape  from '/src/UI/Components/Escape/Escape';
+import WorldMap  from '/src/UI/Components/WorldMap/WorldMap';
+import htmlText  from './BasicInfo.html';
+import cssText  from './BasicInfo.css';
 
 
 /**

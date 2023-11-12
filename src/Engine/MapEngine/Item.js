@@ -14,25 +14,25 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import EquipLocation from 'DB/Items/EquipmentLocation';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import ItemObject from 'Renderer/ItemObject';
-import Altitude from 'Renderer/Map/Altitude';
-import Session from 'Engine/SessionStorage';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import ItemObtain from 'UI/Components/ItemObtain/ItemObtain';
-import ItemSelection from 'UI/Components/ItemSelection/ItemSelection';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import CartItems from 'UI/Components/CartItems/CartItems';
-import Equipment from 'UI/Components/Equipment/Equipment';
-import PlayerEquipment from 'UI/Components/PlayerEquipment/PlayerEquipment';
-import Storage from 'UI/Components/Storage/Storage';
-import MakeItemSelection from 'UI/Components/MakeItemSelection/MakeItemSelection';
-import ItemListWindowSelection from 'UI/Components/MakeItemSelection/ItemListWindowSelection';
-import EffectManager from 'Renderer/EffectManager';
+import EquipLocation  from '/src/DB/Items/EquipmentLocation';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import ItemObject  from '/src/Renderer/ItemObject';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Session  from '/src/Engine/SessionStorage';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import ItemObtain  from '/src/UI/Components/ItemObtain/ItemObtain';
+import ItemSelection  from '/src/UI/Components/ItemSelection/ItemSelection';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import CartItems  from '/src/UI/Components/CartItems/CartItems';
+import Equipment  from '/src/UI/Components/Equipment/Equipment';
+import PlayerEquipment  from '/src/UI/Components/PlayerEquipment/PlayerEquipment';
+import Storage  from '/src/UI/Components/Storage/Storage';
+import MakeItemSelection  from '/src/UI/Components/MakeItemSelection/MakeItemSelection';
+import ItemListWindowSelection  from '/src/UI/Components/MakeItemSelection/ItemListWindowSelection';
+import EffectManager  from '/src/Renderer/EffectManager';
 
 
 /**

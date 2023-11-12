@@ -22,24 +22,24 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import jQuery from 'Utils/jquery';
-import Renderer from 'Renderer/Renderer';
-import Client from 'Core/Client';
-import Events from 'Core/Events';
-import Preferences from 'Core/Preferences';
-import KEYS from 'Controls/KeyEventHandler';
-import Mouse from 'Controls/MouseEventHandler';
-import BattleMode from 'Controls/BattleMode';
-import History from './History';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ContextMenu from 'UI/Components/ContextMenu/ContextMenu';
-import htmlText from 'text!./ChatBox.html';
-import cssText from 'text!./ChatBox.css';
-import ProcessCommand from 'Controls/ProcessCommand';
-import ChatBoxSettings from 'UI/Components/ChatBoxSettings/ChatBoxSettings';
+import jQuery  from '/src/Utils/jquery';
+import Renderer  from '/src/Renderer/Renderer';
+import Client  from '/src/Core/Client';
+import Events  from '/src/Core/Events';
+import Preferences  from '/src/Core/Preferences';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import BattleMode  from '/src/Controls/BattleMode';
+import History   from './History';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ContextMenu  from '/src/UI/Components/ContextMenu/ContextMenu';
+import htmlText  from './ChatBox.html';
+import cssText  from './ChatBox.css';
+import ProcessCommand  from '/src/Controls/ProcessCommand';
+import ChatBoxSettings  from '/src/UI/Components/ChatBoxSettings/ChatBoxSettings';
 
 
 /**

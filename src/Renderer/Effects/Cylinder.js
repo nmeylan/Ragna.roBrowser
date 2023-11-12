@@ -26,12 +26,12 @@
  *
  * @author Vincent Thibault
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import Texture from 'Utils/Texture';
-import glMatrix from 'Utils/gl-matrix';
-import Client from 'Core/Client';
-import Camera from 'Renderer/Camera';
+import Texture  from '/src/Utils/Texture';
+import glMatrix  from '/src/Utils/gl-matrix';
+import Client  from '/src/Core/Client';
+import Camera  from '/src/Renderer/Camera';
 
 'use strict';
 

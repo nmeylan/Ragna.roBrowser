@@ -23,17 +23,17 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Session from 'Engine/SessionStorage';
-import EntityManager from 'Renderer/EntityManager';
-import UIManager from 'UI/UIManager';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import HomunInformations from 'UI/Components/HomunInformations/HomunInformations';
-import SkillListMER from 'UI/Components/SkillListMER/SkillListMER';
-import Mouse from 'Controls/MouseEventHandler';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Session  from '/src/Engine/SessionStorage';
+import EntityManager  from '/src/Renderer/EntityManager';
+import UIManager  from '/src/UI/UIManager';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import HomunInformations  from '/src/UI/Components/HomunInformations/HomunInformations';
+import SkillListMER  from '/src/UI/Components/SkillListMER/SkillListMER';
+import Mouse  from '/src/Controls/MouseEventHandler';
 
 /**
  * Get own homunculus information from server

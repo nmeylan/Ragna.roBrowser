@@ -18,7 +18,7 @@
  * @created MrUnzO
  */
 
-import WeaponType from './WeaponType';
+import WeaponType   from './WeaponType';
 
 "use strict";
 

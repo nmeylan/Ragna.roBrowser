@@ -22,13 +22,13 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Client from 'Core/Client';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./CardIllustration.html';
-import cssText from 'text!./CardIllustration.css';
+import Client  from '/src/Core/Client';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './CardIllustration.html';
+import cssText  from './CardIllustration.css';
 
 
 /**

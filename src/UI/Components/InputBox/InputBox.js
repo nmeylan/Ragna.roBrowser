@@ -22,15 +22,15 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Renderer from 'Renderer/Renderer';
-import KEYS from 'Controls/KeyEventHandler';
-import DB from 'DB/DBManager';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./InputBox.html';
-import cssText from 'text!./InputBox.css';
+import Renderer  from '/src/Renderer/Renderer';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import DB  from '/src/DB/DBManager';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './InputBox.html';
+import cssText  from './InputBox.css';
 
 
 /**

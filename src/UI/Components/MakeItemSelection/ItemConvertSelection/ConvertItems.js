@@ -18,19 +18,19 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import Preferences from 'Core/Preferences';
-import Mouse from 'Controls/MouseEventHandler';
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import MakeModelMessage from 'UI/Components/MakeItemSelection/ItemConvertSelection/MakeModelMessage/MakeModelMessage';
-import htmlText from 'text!./ConvertItems.html';
-import cssText from 'text!./ConvertItems.css';
+import DB  from '/src/DB/DBManager';
+import Preferences  from '/src/Core/Preferences';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import MakeModelMessage  from '/src/UI/Components/MakeItemSelection/ItemConvertSelection/MakeModelMessage/MakeModelMessage';
+import htmlText  from './ConvertItems.html';
+import cssText  from './ConvertItems.css';
 var getModule   		= require;
 
 /**

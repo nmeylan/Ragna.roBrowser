@@ -18,20 +18,20 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import Preferences from 'Core/Preferences';
-import ConvertItems from 'UI/Components/MakeItemSelection/ItemConvertSelection/ConvertItems';
-import Mouse from 'Controls/MouseEventHandler';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import htmlText from 'text!./ItemListWindowSelection.html';
-import cssText from 'text!./ItemListWindowSelection.css';
+import DB  from '/src/DB/DBManager';
+import Preferences  from '/src/Core/Preferences';
+import ConvertItems  from '/src/UI/Components/MakeItemSelection/ItemConvertSelection/ConvertItems';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import htmlText  from './ItemListWindowSelection.html';
+import cssText  from './ItemListWindowSelection.css';
 var getModule   = require;
 
 

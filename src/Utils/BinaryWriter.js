@@ -22,7 +22,7 @@
  * @author Vincent Thibault
  */
 
-import TextEncoding from 'Vendors/text-encoding';
+import TextEncoding  from '/src/Vendors/text-encoding';
 
 'use strict';
 

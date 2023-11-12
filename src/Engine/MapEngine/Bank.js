@@ -20,13 +20,13 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Session from 'Engine/SessionStorage';
-import Bank from 'UI/Components/Bank/Bank';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Session  from '/src/Engine/SessionStorage';
+import Bank  from '/src/UI/Components/Bank/Bank';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
 
 /**
  * Engine namespace

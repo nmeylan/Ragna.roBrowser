@@ -18,7 +18,7 @@
  * @author MrUnzO
  */
 
-import Emotion from 'DB/EmotionsConst';
+import Emotion  from '/src/DB/EmotionsConst';
 
 'use strict';
 

@@ -22,14 +22,14 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import KEYS from 'Controls/KeyEventHandler';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./NpcBox.html';
-import cssText from 'text!./NpcBox.css';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './NpcBox.html';
+import cssText  from './NpcBox.css';
 
 
 /**

@@ -22,12 +22,12 @@
 /**
  * Dependencies
  */
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./WinPopup.html';
-import cssText from 'text!./WinPopup.css';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './WinPopup.html';
+import cssText  from './WinPopup.css';
 
 
 /**

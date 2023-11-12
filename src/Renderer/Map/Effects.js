@@ -34,9 +34,9 @@
  *
  * @author Vincent Thibault
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import EffectManager from 'Renderer/EffectManager';
+import EffectManager  from '/src/Renderer/EffectManager';
 'use strict';
 
 

@@ -18,18 +18,18 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import SkillListMER from 'UI/Components/SkillListMER/SkillListMER';
-import htmlText from 'text!./HomunInformations.html';
-import cssText from 'text!./HomunInformations.css';
-import Session from 'Engine/SessionStorage';
-import AIDriver from 'Core/AIDriver';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import SkillListMER  from '/src/UI/Components/SkillListMER/SkillListMER';
+import htmlText  from './HomunInformations.html';
+import cssText  from './HomunInformations.css';
+import Session  from '/src/Engine/SessionStorage';
+import AIDriver  from '/src/Core/AIDriver';
 
 /**
  * Create Component

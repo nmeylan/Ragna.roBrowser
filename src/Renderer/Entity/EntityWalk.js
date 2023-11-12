@@ -21,10 +21,10 @@
 /**
  *  Load dependencies
  */
-import PathFinding from 'Utils/PathFinding';
+import PathFinding  from '/src/Utils/PathFinding';
 
-import Renderer from 'Renderer/Renderer';
-import Altitude from 'Renderer/Map/Altitude';
+import Renderer  from '/src/Renderer/Renderer';
+import Altitude  from '/src/Renderer/Map/Altitude';
 
 
 /**

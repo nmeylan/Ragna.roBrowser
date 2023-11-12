@@ -24,22 +24,22 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Client from 'Core/Client';
-import Session from 'Engine/SessionStorage';
-import EntityManager from 'Renderer/EntityManager';
-import UIManager from 'UI/UIManager';
-import SlotMachine from 'UI/Components/SlotMachine/SlotMachine';
-import SkillTargetSelection from 'UI/Components/SkillTargetSelection/SkillTargetSelection';
-import ItemSelection from 'UI/Components/ItemSelection/ItemSelection';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import PetInformations from 'UI/Components/PetInformations/PetInformations';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import Emotions from 'DB/Emotions';
-import PetMessageConst from 'DB/Pets/PetMessageConst';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Client  from '/src/Core/Client';
+import Session  from '/src/Engine/SessionStorage';
+import EntityManager  from '/src/Renderer/EntityManager';
+import UIManager  from '/src/UI/UIManager';
+import SlotMachine  from '/src/UI/Components/SlotMachine/SlotMachine';
+import SkillTargetSelection  from '/src/UI/Components/SkillTargetSelection/SkillTargetSelection';
+import ItemSelection  from '/src/UI/Components/ItemSelection/ItemSelection';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import PetInformations  from '/src/UI/Components/PetInformations/PetInformations';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import Emotions  from '/src/DB/Emotions';
+import PetMessageConst  from '/src/DB/Pets/PetMessageConst';
 
 
 /**

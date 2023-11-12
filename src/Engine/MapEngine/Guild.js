@@ -24,25 +24,25 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Inflate from 'Utils/Inflate';
-import Texture from 'Utils/Texture';
-import BinaryWriter from 'Utils/BinaryWriter';
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import EntityManager from 'Renderer/EntityManager';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
+import Inflate  from '/src/Utils/Inflate';
+import Texture  from '/src/Utils/Texture';
+import BinaryWriter  from '/src/Utils/BinaryWriter';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import EntityManager  from '/src/Renderer/EntityManager';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
 var MiniMap;
 if(PACKETVER.value >= 20180124) {
     MiniMap          = require('UI/Components/MiniMapV2/MiniMapV2');
 } else {
     MiniMap          = require('UI/Components/MiniMap/MiniMap');
 }
-import Guild from 'UI/Components/Guild/Guild';
-import UIManager from 'UI/UIManager';
+import Guild  from '/src/UI/Components/Guild/Guild';
+import UIManager  from '/src/UI/UIManager';
 
 
 /**

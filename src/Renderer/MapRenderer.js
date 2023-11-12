@@ -13,32 +13,32 @@
 /**
  * Load dependencies
  */
-import Thread from 'Core/Thread';
+import Thread  from '/src/Core/Thread';
 
-import SoundManager from 'Audio/SoundManager';
-import BGM from 'Audio/BGM';
-import DB from 'DB/DBManager';
-import UIManager from 'UI/UIManager';
-import Background from 'UI/Background';
-import Cursor from 'UI/CursorManager';
-import Session from 'Engine/SessionStorage';
-import MemoryManager from 'Core/MemoryManager';
-import Mouse from 'Controls/MouseEventHandler';
-import Renderer from 'Renderer/Renderer';
-import Camera from 'Renderer/Camera';
-import EntityManager from 'Renderer/EntityManager';
-import GridSelector from 'Renderer/Map/GridSelector';
-import Ground from 'Renderer/Map/Ground';
-import Altitude from 'Renderer/Map/Altitude';
-import Water from 'Renderer/Map/Water';
-import Models from 'Renderer/Map/Models';
-import Sounds from 'Renderer/Map/Sounds';
-import Effects from 'Renderer/Map/Effects';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import EffectManager from 'Renderer/EffectManager';
-import Sky from 'Renderer/Effects/Sky';
-import Damage from 'Renderer/Effects/Damage';
-import MapPreferences from 'Preferences/Map';
+import SoundManager  from '/src/Audio/SoundManager';
+import BGM  from '/src/Audio/BGM';
+import DB  from '/src/DB/DBManager';
+import UIManager  from '/src/UI/UIManager';
+import Background  from '/src/UI/Background';
+import Cursor  from '/src/UI/CursorManager';
+import Session  from '/src/Engine/SessionStorage';
+import MemoryManager  from '/src/Core/MemoryManager';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Renderer  from '/src/Renderer/Renderer';
+import Camera  from '/src/Renderer/Camera';
+import EntityManager  from '/src/Renderer/EntityManager';
+import GridSelector  from '/src/Renderer/Map/GridSelector';
+import Ground  from '/src/Renderer/Map/Ground';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Water  from '/src/Renderer/Map/Water';
+import Models  from '/src/Renderer/Map/Models';
+import Sounds  from '/src/Renderer/Map/Sounds';
+import Effects  from '/src/Renderer/Map/Effects';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import EffectManager  from '/src/Renderer/EffectManager';
+import Sky  from '/src/Renderer/Effects/Sky';
+import Damage  from '/src/Renderer/Effects/Damage';
+import MapPreferences  from '/src/Preferences/Map';
 
 
 /**

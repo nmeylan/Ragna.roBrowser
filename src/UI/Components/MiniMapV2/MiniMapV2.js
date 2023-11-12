@@ -22,19 +22,19 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Session from 'Engine/SessionStorage';
-import Renderer from 'Renderer/Renderer';
-import Altitude from 'Renderer/Map/Altitude';
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import WorldMap from 'UI/Components/WorldMap/WorldMap';
-import htmlText from 'text!./MiniMapV2.html';
-import cssText from 'text!./MiniMapV2.css';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Session  from '/src/Engine/SessionStorage';
+import Renderer  from '/src/Renderer/Renderer';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import WorldMap  from '/src/UI/Components/WorldMap/WorldMap';
+import htmlText  from './MiniMapV2.html';
+import cssText  from './MiniMapV2.css';
 
 
 /**

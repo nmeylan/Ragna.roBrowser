@@ -22,16 +22,16 @@
 /**
  * Dependencies
  */
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 
-import KEYS from 'Controls/KeyEventHandler';
-import Entity from 'Renderer/Entity/Entity';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Camera from 'Renderer/Camera';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./CharCreate.html';
-import cssText from 'text!./CharCreate.css';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Entity  from '/src/Renderer/Entity/Entity';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Camera  from '/src/Renderer/Camera';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './CharCreate.html';
+import cssText  from './CharCreate.css';
 
 
 /**

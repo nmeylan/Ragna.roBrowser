@@ -34,9 +34,9 @@
  *
  * @author Vincent Thibault
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 'use strict';
 
 

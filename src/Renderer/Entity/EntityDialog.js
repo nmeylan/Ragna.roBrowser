@@ -34,10 +34,10 @@
  *
  * @author Vincent Thibault
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Events from 'Core/Events';
-import Renderer from 'Renderer/Renderer';
+import Events  from '/src/Core/Events';
+import Renderer  from '/src/Renderer/Renderer';
 'use strict';
 
 

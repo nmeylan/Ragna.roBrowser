@@ -24,45 +24,45 @@
 /**
  * Dependencies
  */
-import Client from 'Core/Client';
+import Client  from '/src/Core/Client';
 
-import TextEncoding from 'Vendors/text-encoding';
-import fengari from 'Vendors/fengari-web';
-import ClassTable from './Jobs/JobNameTable';
-import PaletteTable from './Jobs/PalNameTable';
-import WeaponAction from './Jobs/WeaponAction';
-import WeaponJobTable from './Jobs/WeaponJobTable';
-import BabyTable from './Jobs/BabyTable';
-import HairIndexTable from './Jobs/HairIndexTable';
-import MonsterTable from './Monsters/MonsterTable';
-import PetIllustration from './Pets/PetIllustration';
-import PetAction from './Pets/PetAction';
-import ItemTable from './Items/ItemTable';
-import HatTable from './Items/HatTable';
-import ShieldTable from './Items/ShieldTable';
-import WeaponTable from './Items/WeaponTable';
-import WeaponType from './Items/WeaponType';
-import WeaponSoundTable from './Items/WeaponSoundTable';
-import WeaponHitSoundTable from './Items/WeaponHitSoundTable';
-import JobHitSoundTable from './Jobs/JobHitSoundTable';
-import WeaponTrailTable from './Items/WeaponTrailTable';
-import TownInfo from './TownInfo';
-import XmlParse from 'Vendors/xmlparse';
-import QuestInfo from './QuestTable';
+import TextEncoding  from '/src/Vendors/text-encoding';
+import fengari  from '/src/Vendors/fengari-web';
+import ClassTable   from './Jobs/JobNameTable';
+import PaletteTable   from './Jobs/PalNameTable';
+import WeaponAction   from './Jobs/WeaponAction';
+import WeaponJobTable   from './Jobs/WeaponJobTable';
+import BabyTable   from './Jobs/BabyTable';
+import HairIndexTable   from './Jobs/HairIndexTable';
+import MonsterTable   from './Monsters/MonsterTable';
+import PetIllustration   from './Pets/PetIllustration';
+import PetAction   from './Pets/PetAction';
+import ItemTable   from './Items/ItemTable';
+import HatTable   from './Items/HatTable';
+import ShieldTable   from './Items/ShieldTable';
+import WeaponTable   from './Items/WeaponTable';
+import WeaponType   from './Items/WeaponType';
+import WeaponSoundTable   from './Items/WeaponSoundTable';
+import WeaponHitSoundTable   from './Items/WeaponHitSoundTable';
+import JobHitSoundTable   from './Jobs/JobHitSoundTable';
+import WeaponTrailTable   from './Items/WeaponTrailTable';
+import TownInfo   from './TownInfo';
+import XmlParse  from '/src/Vendors/xmlparse';
+import QuestInfo   from './QuestTable';
 
 //Pet
-import PetEmotionTable from './Pets/PetEmotionTable';
+import PetEmotionTable   from './Pets/PetEmotionTable';
 
-import PetHungryState from './Pets/PetHungryState';
-import PetFriendlyState from './Pets/PetFriendlyState';
-import PetMessageConst from './Pets/PetMessageConst';
+import PetHungryState   from './Pets/PetHungryState';
+import PetFriendlyState   from './Pets/PetFriendlyState';
+import PetMessageConst   from './Pets/PetMessageConst';
 
 //MapName
-import MapInfo from './Map/MapTable';
+import MapInfo   from './Map/MapTable';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import PACKETVER from 'Network/PacketVerManager';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import PACKETVER  from '/src/Network/PacketVerManager';
 
 /**
  * DB NameSpace

@@ -34,9 +34,9 @@
  *
  * @author Vincent Thibault
  */
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 'use strict';
 
 

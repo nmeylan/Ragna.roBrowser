@@ -22,11 +22,11 @@
 /**
  * Dependencies
  */
-import UIManager from 'UI/UIManager';
+import UIManager  from '/src/UI/UIManager';
 
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./EntityRoom.html';
-import cssText from 'text!./EntityRoom.css';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './EntityRoom.html';
+import cssText  from './EntityRoom.css';
 
 
 /**

@@ -13,23 +13,23 @@
 
 
 // Load dependencies
-import TextEncoding from 'Vendors/text-encoding';
+import TextEncoding  from '/src/Vendors/text-encoding';
 
-import DB from 'DB/DBManager';
-import BGM from 'Audio/BGM';
-import Sound from 'Audio/SoundManager';
-import Configs from 'Core/Configs';
-import Thread from 'Core/Thread';
-import Session from 'Engine/SessionStorage';
-import CharEngine from 'Engine/CharEngine';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import WinList from 'UI/Components/WinList/WinList';
-import WinPopup from 'UI/Components/WinPopup/WinPopup';
-import MD5 from 'Vendors/spark-md5.min';
+import DB  from '/src/DB/DBManager';
+import BGM  from '/src/Audio/BGM';
+import Sound  from '/src/Audio/SoundManager';
+import Configs  from '/src/Core/Configs';
+import Thread  from '/src/Core/Thread';
+import Session  from '/src/Engine/SessionStorage';
+import CharEngine  from '/src/Engine/CharEngine';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import WinList  from '/src/UI/Components/WinList/WinList';
+import WinPopup  from '/src/UI/Components/WinPopup/WinPopup';
+import MD5  from '/src/Vendors/spark-md5.min';
 var WinLogin;
 if(PACKETVER.value >= 20181114) {
     WinLogin = require('UI/Components/WinLoginV2/WinLoginV2');

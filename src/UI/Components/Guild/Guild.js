@@ -22,28 +22,28 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import SkillInfo from 'DB/Skills/SkillInfo';
-import jQuery from 'Utils/jquery';
-import Mouse from 'Controls/MouseEventHandler';
-import MonsterTable from 'DB/Monsters/MonsterTable';
-import Session from 'Engine/SessionStorage';
-import Entity from 'Renderer/Entity/Entity';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Camera from 'Renderer/Camera';
-import Renderer from 'Renderer/Renderer';
-import Preferences from 'Core/Preferences';
-import Client from 'Core/Client';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ContextMenu from 'UI/Components/ContextMenu/ContextMenu';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import SkillTargetSelection from 'UI/Components/SkillTargetSelection/SkillTargetSelection';
-import SkillDescription from 'UI/Components/SkillDescription/SkillDescription';
-import htmlText from 'text!./Guild.html';
-import cssText from 'text!./Guild.css';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import jQuery  from '/src/Utils/jquery';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import MonsterTable  from '/src/DB/Monsters/MonsterTable';
+import Session  from '/src/Engine/SessionStorage';
+import Entity  from '/src/Renderer/Entity/Entity';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Camera  from '/src/Renderer/Camera';
+import Renderer  from '/src/Renderer/Renderer';
+import Preferences  from '/src/Core/Preferences';
+import Client  from '/src/Core/Client';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ContextMenu  from '/src/UI/Components/ContextMenu/ContextMenu';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import SkillTargetSelection  from '/src/UI/Components/SkillTargetSelection/SkillTargetSelection';
+import SkillDescription  from '/src/UI/Components/SkillDescription/SkillDescription';
+import htmlText  from './Guild.html';
+import cssText  from './Guild.css';
 
 
 /**

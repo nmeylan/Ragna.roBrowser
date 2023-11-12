@@ -22,18 +22,18 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./Intro.html';
-import cssText from 'text!./Intro.css';
-import Context from 'Core/Context';
-import Configs from 'Core/Configs';
-import Particle from './Particle';
-import Preferences from './Preferences';
-import FileSystem from './FileSystem';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './Intro.html';
+import cssText  from './Intro.css';
+import Context  from '/src/Core/Context';
+import Configs  from '/src/Core/Configs';
+import Particle   from '/src/Particle';
+import Preferences   from '/src/Preferences';
+import FileSystem   from '/src/FileSystem';
 
 
 /**

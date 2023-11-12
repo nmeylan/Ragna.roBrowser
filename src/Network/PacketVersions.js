@@ -20,7 +20,7 @@
  * @author Vincent Thibault
  */
 
-import PACKET from './PacketStructure';
+import PACKET   from '/src/PacketStructure';
 
 'use strict';
 

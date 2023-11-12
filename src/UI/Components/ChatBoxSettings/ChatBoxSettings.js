@@ -19,17 +19,17 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Preferences from 'Core/Preferences';
-import jQuery from 'Utils/jquery';
-import Renderer from 'Renderer/Renderer';
-import Client from 'Core/Client';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./ChatBoxSettings.html';
-import cssText from 'text!./ChatBoxSettings.css';
+import Preferences  from '/src/Core/Preferences';
+import jQuery  from '/src/Utils/jquery';
+import Renderer  from '/src/Renderer/Renderer';
+import Client  from '/src/Core/Client';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './ChatBoxSettings.html';
+import cssText  from './ChatBoxSettings.css';
 /**
  * Create Component
  */

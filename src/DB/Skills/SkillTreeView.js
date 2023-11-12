@@ -1,5 +1,5 @@
-import SK from './SkillConst';
-import JobId from 'DB/Jobs/JobConst';
+import SK   from '/src/SkillConst';
+import JobId  from '/src/DB/Jobs/JobConst';
 "use strict";
 
 

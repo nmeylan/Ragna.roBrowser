@@ -50,11 +50,11 @@
  * @author Vincent Thibault
  */
 
-import require from 'require';
+import require  from '/src/require';
 
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Preferences from 'Preferences/Audio';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Preferences/Audio';
 'use strict';
 
 

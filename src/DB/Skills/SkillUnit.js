@@ -38,9 +38,9 @@
  * @author Vincent Thibault
  */
 
-import SU from './SkillUnitConst';
+import SU   from '/src/SkillUnitConst';
 
-import EC from 'DB/Effects/EffectConst';
+import EC  from '/src/DB/Effects/EffectConst';
 'use strict';	// Tofix
 
 var SkillUnit = {};

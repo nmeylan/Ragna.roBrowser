@@ -22,20 +22,20 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import SkillInfo from 'DB/Skills/SkillInfo';
-import KEYS from 'Controls/KeyEventHandler';
-import Mouse from 'Controls/MouseEventHandler';
-import jQuery from 'Utils/jquery';
-import Renderer from 'Renderer/Renderer';
-import Entity from 'Renderer/Entity/Entity';
-import EntityManager from 'Renderer/EntityManager';
-import Session from 'Engine/SessionStorage';
-import Controls from 'Preferences/Controls';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Cursor from 'UI/CursorManager';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import jQuery  from '/src/Utils/jquery';
+import Renderer  from '/src/Renderer/Renderer';
+import Entity  from '/src/Renderer/Entity/Entity';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Session  from '/src/Engine/SessionStorage';
+import Controls  from '/src/Preferences/Controls';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Cursor  from '/src/UI/CursorManager';
 
 
 /**

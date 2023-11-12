@@ -22,16 +22,16 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import EntityManager from 'Renderer/EntityManager';
-import NpcStore from 'UI/Components/NpcStore/NpcStore';
-import Vending from 'UI/Components/Vending/Vending';
-import VendingShop from 'UI/Components/VendingShop/VendingShop';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import EntityManager  from '/src/Renderer/EntityManager';
+import NpcStore  from '/src/UI/Components/NpcStore/NpcStore';
+import Vending  from '/src/UI/Components/Vending/Vending';
+import VendingShop  from '/src/UI/Components/VendingShop/VendingShop';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
 
 
 /**

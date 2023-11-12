@@ -24,10 +24,10 @@
 /**
  * Dependencies
  */
-import _htmlText from 'text!./Error.html';
+import _htmlText  from './Error.html';
 
-import _cssText from 'text!./Error.css';
-import jQuery from 'Vendors/jquery';
+import _cssText  from './Error.css';
+import jQuery  from '/src/Vendors/jquery';
 
 
 /**

@@ -30,13 +30,13 @@
  * @author Vincent Thibault
  */
 
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Configs from 'Core/Configs';
-import Context from 'Core/Context';
-import Preferences from 'Core/Preferences';
-import Audio from 'Preferences/Audio';
-import Graphics from 'Preferences/Graphics';
+import Configs  from '/src/Core/Configs';
+import Context  from '/src/Core/Context';
+import Preferences  from '/src/Core/Preferences';
+import Audio  from '/src/Preferences/Audio';
+import Graphics  from '/src/Preferences/Graphics';
 'use strict';
 
 

@@ -22,22 +22,22 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Preferences from 'Core/Preferences';
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import QuestHelper from 'UI/Components/Quest/QuestHelper';
-import QuestWindow from 'UI/Components/Quest/QuestWindow';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import htmlText from 'text!./Quest.html';
-import cssText from 'text!./Quest.css';
-import jQuery from 'Utils/jquery';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import Session from 'Engine/SessionStorage';
+import Preferences  from '/src/Core/Preferences';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import QuestHelper  from '/src/UI/Components/Quest/QuestHelper';
+import QuestWindow  from '/src/UI/Components/Quest/QuestWindow';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import htmlText  from './Quest.html';
+import cssText  from './Quest.css';
+import jQuery  from '/src/Utils/jquery';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import Session  from '/src/Engine/SessionStorage';
 
 /**
  * Create Component

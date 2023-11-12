@@ -3707,7 +3707,7 @@ export default {
     "1004": {
         "Summary": "Collect Trunks and report to the Archer Guildsman.",
         "Title": "Job Change to Archer",
-        "Description": ["In order to become an Archer, you must receive a grade of at least ^0000FF25^000000 points out of 40. You can get Trunks from 'Willow' monsters. Be careful, though. They can be tough monsters."]
+        "Description": ["In order to become an Archer, you must receive a grade of at least ^0000FF25^000000 points out of 40. You can get Trunks  from '/src/Willow' monsters. Be careful, though. They can be tough monsters."]
     },
     "1008": {
         "Summary": "Mixed Solution No.4",
@@ -17956,7 +17956,7 @@ export default {
     "1203": {
         "Summary": "Talk with 'Citrus', Raccoon Hurray Team Member in north geffen.",
         "Title": "Look out the window, Cheers for Raccoon Hurray team!",
-        "Description": ["Get the clothes from 'Citrus' nearby 'Sage Welshyun' in north geffen."]
+        "Description": ["Get the clothes  from '/src/Citrus' nearby 'Sage Welshyun' in north geffen."]
     },
     "63305": {
         "Summary": "Head to Kristen Glisterine outside of Prontera.",
@@ -19285,7 +19285,7 @@ export default {
     "5068": {
         "Summary": "Collecting time is only for 20 hours.",
         "Title": "Collecting complaint",
-        "Description": ["We are collecting complaint from 'Nyang Gamers' players."]
+        "Description": ["We are collecting complaint  from '/src/Nyang Gamers' players."]
     },
     "5100": {
         "Summary": "",
@@ -23124,7 +23124,7 @@ export default {
     "1204": {
         "Summary": "Talk with 'Kaki', Raccoon Hurray Team Member in geffen square.",
         "Title": "Look out the window, Cheers for Raccoon Hurray team!",
-        "Description": ["Got a red package from 'Citrus'. Let's deliver this to raccoon, 'Kaki'."]
+        "Description": ["Got a red package  from '/src/Citrus'. Let's deliver this to raccoon, 'Kaki'."]
     },
     "63337": {
         "Summary": "",
@@ -29037,7 +29037,7 @@ export default {
     "60731": {
         "Summary": "Maybe I should also contemplate a memory aid for these crusaders, something to help them remember their place like a 'Bookclip' from a 'Rideword'",
         "Title": "Seal of Megingjard",
-        "Description": ["Jack.O found some relief from 'Green Herb's.  Perhaps I should pass that advice onto the other Crusaders I meet.  Emma Searth is in Aldebaran, a quick boat to Izlude and a Kafra warp to Aldebaran will have me there in a jiffy!"]
+        "Description": ["Jack.O found some relief  from '/src/Green Herb's.  Perhaps I should pass that advice onto the other Crusaders I meet.  Emma Searth is in Aldebaran, a quick boat to Izlude and a Kafra warp to Aldebaran will have me there in a jiffy!"]
     },
     "60730": {
         "Summary": "He is still an active crusader, so I think talking to him will be much more straight forward.",

@@ -11,17 +11,17 @@
 
 
 // Load dependencies
-import CommonCSS from 'text!./Common.css';
+import CommonCSS  from './Common.css';
 
-import jQuery from 'Utils/jquery';
-import Cursor from './CursorManager';
-import DB from 'DB/DBManager';
-import Client from 'Core/Client';
-import Events from 'Core/Events';
-import Mouse from 'Controls/MouseEventHandler';
-import Session from 'Engine/SessionStorage';
-import Targa from 'Loaders/Targa';
-import Renderer from 'Renderer/Renderer';
+import jQuery  from '/src/Utils/jquery';
+import Cursor   from './CursorManager';
+import DB  from '/src/DB/DBManager';
+import Client  from '/src/Core/Client';
+import Events  from '/src/Core/Events';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Session  from '/src/Engine/SessionStorage';
+import Targa  from '/src/Loaders/Targa';
+import Renderer  from '/src/Renderer/Renderer';
 var getModule = require;
 
 

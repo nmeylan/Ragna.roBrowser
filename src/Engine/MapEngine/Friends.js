@@ -24,13 +24,13 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import UIManager from 'UI/UIManager';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import FriendUI from 'UI/Components/PartyFriends/PartyFriends';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import UIManager  from '/src/UI/UIManager';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import FriendUI  from '/src/UI/Components/PartyFriends/PartyFriends';
 
 
 /**

@@ -22,18 +22,18 @@
 /**
  * Load dependencies
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Configs from 'Core/Configs';
-import Client from 'Core/Client';
-import Model from 'Loaders/Model';
-import Renderer from 'Renderer/Renderer';
-import ModelRenderer from 'Renderer/Map/Models';
-import Camera from 'Renderer/Camera';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./ModelViewer.html';
-import cssText from 'text!./ModelViewer.css';
+import Configs  from '/src/Core/Configs';
+import Client  from '/src/Core/Client';
+import Model  from '/src/Loaders/Model';
+import Renderer  from '/src/Renderer/Renderer';
+import ModelRenderer  from '/src/Renderer/Map/Models';
+import Camera  from '/src/Renderer/Camera';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './ModelViewer.html';
+import cssText  from './ModelViewer.css';
 
 var mat4               = glMatrix.mat4;
 var mat3               = glMatrix.mat3;

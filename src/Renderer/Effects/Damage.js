@@ -22,18 +22,18 @@
 
 
 // Load dependencies
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import Client from 'Core/Client';
-import Sprite from 'Loaders/Sprite';
-import Renderer from 'Renderer/Renderer';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import MapPreferences from 'Preferences/Map';
-import DB from 'DB/DBManager';
-import Sound from 'Audio/SoundManager';
-import EffectManager from 'Renderer/EffectManager';
-import MemoryManager from 'Core/MemoryManager';
-import Entity from 'Renderer/Entity/Entity';
+import Client  from '/src/Core/Client';
+import Sprite  from '/src/Loaders/Sprite';
+import Renderer  from '/src/Renderer/Renderer';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import MapPreferences  from '/src/Preferences/Map';
+import DB  from '/src/DB/DBManager';
+import Sound  from '/src/Audio/SoundManager';
+import EffectManager  from '/src/Renderer/EffectManager';
+import MemoryManager  from '/src/Core/MemoryManager';
+import Entity  from '/src/Renderer/Entity/Entity';
 
 var EndureSound    = "player_metal.wav";
 

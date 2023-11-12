@@ -22,11 +22,11 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import UIManager from 'UI/UIManager';
-import WinPopup from 'UI/Components/WinPopup';
-import jQuery from 'Utils/jquery';
+import UIManager  from '/src/UI/UIManager';
+import WinPopup  from '/src/UI/Components/WinPopup';
+import jQuery  from '/src/Utils/jquery';
 
 
 /**

@@ -22,10 +22,10 @@
 /**
  * Load dependencies
  */
-import Network from 'Network/NetworkManager';
+import Network  from '/src/Network/NetworkManager';
 
-import PACKET from 'Network/PacketStructure';
-import CashShop from 'UI/Components/CashShop/CashShop';
+import PACKET  from '/src/Network/PacketStructure';
+import CashShop  from '/src/UI/Components/CashShop/CashShop';
 
 function onOpenCashShop(pkt){
     CashShop.readPoints(pkt.cashPoints, pkt.kafraPoints, pkt.tab);

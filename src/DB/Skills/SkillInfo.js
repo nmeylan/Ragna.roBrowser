@@ -34,9 +34,9 @@
  *
  * @author Vincent Thibault
  */
-import SK from './SkillConst';
+import SK   from '/src/SkillConst';
 
-import JobId from 'DB/Jobs/JobConst';
+import JobId  from '/src/DB/Jobs/JobConst';
 "use strict";
 
 

@@ -38,7 +38,7 @@
  * @author Vincent Thibault
  */
 
-import StatusConst from 'DB/Status/StatusConst';
+import StatusConst  from '/src/DB/Status/StatusConst';
 
 "use strict";
 

@@ -20,14 +20,14 @@
 
 
 // Load dependencies
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import glMatrix from 'Utils/gl-matrix';
-import SkillId from 'DB/Skills/SkillConst';
-import Client from 'Core/Client';
-import Altitude from 'Renderer/Map/Altitude';
-import Session from 'Engine/SessionStorage';
-import Camera from 'Renderer/Camera';
+import glMatrix  from '/src/Utils/gl-matrix';
+import SkillId  from '/src/DB/Skills/SkillConst';
+import Client  from '/src/Core/Client';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Session  from '/src/Engine/SessionStorage';
+import Camera  from '/src/Renderer/Camera';
 
 
 /**

@@ -22,16 +22,16 @@
 
 
 // Load dependencies
-import GameFile from 'Loaders/GameFile';
+import GameFile  from '/src/Loaders/GameFile';
 
-import World from 'Loaders/World';
-import Ground from 'Loaders/Ground';
-import Altitude from 'Loaders/Altitude';
-import Model from 'Loaders/Model';
-import Sprite from 'Loaders/Sprite';
-import Action from 'Loaders/Action';
-import Str from 'Loaders/Str';
-import FileSystem from 'Core/FileSystem';
+import World  from '/src/Loaders/World';
+import Ground  from '/src/Loaders/Ground';
+import Altitude  from '/src/Loaders/Altitude';
+import Model  from '/src/Loaders/Model';
+import Sprite  from '/src/Loaders/Sprite';
+import Action  from '/src/Loaders/Action';
+import Str  from '/src/Loaders/Str';
+import FileSystem  from '/src/Core/FileSystem';
 var fs         = self.requireNode && self.requireNode('fs');
 
 

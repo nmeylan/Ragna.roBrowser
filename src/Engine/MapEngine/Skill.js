@@ -20,36 +20,36 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import SkillId from 'DB/Skills/SkillConst';
-import SkillInfo from 'DB/Skills/SkillInfo';
-import SkillActionTable from 'DB/Skills/SkillAction';
-import EffectConst from 'DB/Effects/EffectConst';
-import PathFinding from 'Utils/PathFinding';
-import Entity from 'Renderer/Entity/Entity';
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import EntityManager from 'Renderer/EntityManager';
-import EffectManager from 'Renderer/EffectManager';
-import Altitude from 'Renderer/Map/Altitude';
-import ShortCut from 'UI/Components/ShortCut/ShortCut';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import SkillTargetSelection from 'UI/Components/SkillTargetSelection/SkillTargetSelection';
-import Guild from 'UI/Components/Guild/Guild';
-import SkillListMER from 'UI/Components/SkillListMER/SkillListMER';
-import ItemSelection from 'UI/Components/ItemSelection/ItemSelection';
-import MakeArrowSelection from 'UI/Components/MakeArrowSelection/MakeArrowSelection';
-import MakeItemSelection from 'UI/Components/MakeItemSelection/MakeItemSelection';
-import RefineWeaponSelection from 'UI/Components/RefineWeaponSelection/RefineWeaponSelection';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import NpcMenu from 'UI/Components/NpcMenu/NpcMenu';
-import Sense from 'UI/Components/Sense/Sense';
-import Announce from 'UI/Components/Announce/Announce';
-import UIVersionManager from 'UI/UIVersionManager';
-import Renderer from 'Renderer/Renderer';
+import SkillId  from '/src/DB/Skills/SkillConst';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import SkillActionTable  from '/src/DB/Skills/SkillAction';
+import EffectConst  from '/src/DB/Effects/EffectConst';
+import PathFinding  from '/src/Utils/PathFinding';
+import Entity  from '/src/Renderer/Entity/Entity';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import EntityManager  from '/src/Renderer/EntityManager';
+import EffectManager  from '/src/Renderer/EffectManager';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import ShortCut  from '/src/UI/Components/ShortCut/ShortCut';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import SkillTargetSelection  from '/src/UI/Components/SkillTargetSelection/SkillTargetSelection';
+import Guild  from '/src/UI/Components/Guild/Guild';
+import SkillListMER  from '/src/UI/Components/SkillListMER/SkillListMER';
+import ItemSelection  from '/src/UI/Components/ItemSelection/ItemSelection';
+import MakeArrowSelection  from '/src/UI/Components/MakeArrowSelection/MakeArrowSelection';
+import MakeItemSelection  from '/src/UI/Components/MakeItemSelection/MakeItemSelection';
+import RefineWeaponSelection  from '/src/UI/Components/RefineWeaponSelection/RefineWeaponSelection';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import NpcMenu  from '/src/UI/Components/NpcMenu/NpcMenu';
+import Sense  from '/src/UI/Components/Sense/Sense';
+import Announce  from '/src/UI/Components/Announce/Announce';
+import UIVersionManager  from '/src/UI/UIVersionManager';
+import Renderer  from '/src/Renderer/Renderer';
 var getModule             = require;
 
 var SkillWindow;

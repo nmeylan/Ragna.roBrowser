@@ -20,13 +20,13 @@
 
 
 // Load dependencies
-import Client from 'Core/Client';
+import Client  from '/src/Core/Client';
 
-import DB from 'DB/DBManager';
-import ShadowTable from 'DB/Monsters/ShadowTable';
-import MountTable from 'DB/Jobs/MountTable';
-import AllMountTable from 'DB/Jobs/AllMountTable';
-import EntityAction from './EntityAction';
+import DB  from '/src/DB/DBManager';
+import ShadowTable  from '/src/DB/Monsters/ShadowTable';
+import MountTable  from '/src/DB/Jobs/MountTable';
+import AllMountTable  from '/src/DB/Jobs/AllMountTable';
+import EntityAction   from '/src/EntityAction';
 
 
 /**

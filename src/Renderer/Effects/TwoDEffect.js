@@ -1,10 +1,10 @@
-import WebGL from 'Utils/WebGL';
-import Texture from 'Utils/Texture';
-import glMatrix from 'Utils/gl-matrix';
-import Client from 'Core/Client';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import EntityManager from 'Renderer/EntityManager';
-import Camera from 'Renderer/Camera';
+import WebGL  from '/src/Utils/WebGL';
+import Texture  from '/src/Utils/Texture';
+import glMatrix  from '/src/Utils/gl-matrix';
+import Client  from '/src/Core/Client';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Camera  from '/src/Renderer/Camera';
 
 'use strict';
 

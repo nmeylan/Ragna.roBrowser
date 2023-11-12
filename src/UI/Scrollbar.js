@@ -16,11 +16,11 @@
  *
  * @author Vincent Thibault
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Texture from 'Utils/Texture';
-import DB from 'DB/DBManager';
-import Client from 'Core/Client';
+import Texture  from '/src/Utils/Texture';
+import DB  from '/src/DB/DBManager';
+import Client  from '/src/Core/Client';
 'use strict';
 
 

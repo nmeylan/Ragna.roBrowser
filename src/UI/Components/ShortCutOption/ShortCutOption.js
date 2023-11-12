@@ -16,16 +16,16 @@
  */
 'use strict';
 
-import $ from 'Utils/jquery';
-import KEYS from 'Controls/KeyEventHandler';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ShortCutControls from 'Preferences/ShortCutControls';
-import BattleMode from 'Controls/BattleMode';
-import htmlText from 'text!./ShortCutOption.html';
-import cssText from 'text!./ShortCutOption.css';
+import $  from '/src/Utils/jquery';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ShortCutControls  from '/src/Preferences/ShortCutControls';
+import BattleMode  from '/src/Controls/BattleMode';
+import htmlText  from './ShortCutOption.html';
+import cssText  from './ShortCutOption.css';
 
 var ShortCutOption = new UIComponent("ShortCutOption", htmlText, cssText);
 

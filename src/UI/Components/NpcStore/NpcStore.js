@@ -22,26 +22,26 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import ItemType from 'DB/Items/ItemType';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Session from 'Engine/SessionStorage';
-import Mouse from 'Controls/MouseEventHandler';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ItemInfo from 'UI/Components/ItemInfo/ItemInfo';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import htmlText from 'text!./NpcStore.html';
-import cssText from 'text!./NpcStore.css';
+import DB  from '/src/DB/DBManager';
+import ItemType  from '/src/DB/Items/ItemType';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Session  from '/src/Engine/SessionStorage';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ItemInfo  from '/src/UI/Components/ItemInfo/ItemInfo';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import htmlText  from './NpcStore.html';
+import cssText  from './NpcStore.css';
 
 
 /**

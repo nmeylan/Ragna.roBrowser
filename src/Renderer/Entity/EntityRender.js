@@ -22,17 +22,17 @@
 /**
  * Load dependencies
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Camera from 'Renderer/Camera';
-import Client from 'Core/Client';
-import StatusConst from 'DB/Status/StatusState';
-import Renderer from 'Renderer/Renderer';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Ground from 'Renderer/Map/Ground';
-import Altitude from 'Renderer/Map/Altitude';
-import Session from 'Engine/SessionStorage';
-import JobId from 'DB/Jobs/JobConst';
+import Camera  from '/src/Renderer/Camera';
+import Client  from '/src/Core/Client';
+import StatusConst  from '/src/DB/Status/StatusState';
+import Renderer  from '/src/Renderer/Renderer';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Ground  from '/src/Renderer/Map/Ground';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Session  from '/src/Engine/SessionStorage';
+import JobId  from '/src/DB/Jobs/JobConst';
 
 
 var _last_body_dir = 0;

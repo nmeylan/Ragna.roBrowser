@@ -46,7 +46,7 @@
  * @author Vincent Thibault
  */
 
-import MemoryItem from 'Core/MemoryItem';
+import MemoryItem  from '/src/Core/MemoryItem';
 
 'use strict';
 

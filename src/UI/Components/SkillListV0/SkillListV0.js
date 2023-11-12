@@ -22,22 +22,22 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import SkillInfo from 'DB/Skills/SkillInfo';
-import SkillTreeView from 'DB/Skills/SkillTreeView';
-import Session from 'Engine/SessionStorage';
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import SkillTargetSelection from 'UI/Components/SkillTargetSelection/SkillTargetSelection';
-import SkillDescription from 'UI/Components/SkillDescription/SkillDescription';
-import htmlText from 'text!./SkillListV0.html';
-import cssText from 'text!./SkillListV0.css';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import SkillTreeView  from '/src/DB/Skills/SkillTreeView';
+import Session  from '/src/Engine/SessionStorage';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import SkillTargetSelection  from '/src/UI/Components/SkillTargetSelection/SkillTargetSelection';
+import SkillDescription  from '/src/UI/Components/SkillDescription/SkillDescription';
+import htmlText  from './SkillListV0.html';
+import cssText  from './SkillListV0.css';
 
 
 

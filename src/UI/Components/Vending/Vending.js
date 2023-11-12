@@ -20,27 +20,27 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import ItemType from 'DB/Items/ItemType';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Session from 'Engine/SessionStorage';
-import Mouse from 'Controls/MouseEventHandler';
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ItemInfo from 'UI/Components/ItemInfo/ItemInfo';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import CartItems from 'UI/Components/CartItems/CartItems';
-import VendingModelMessage from 'UI/Components/Vending/VendingModelMessage/VendingModelMessage';
-import htmlText from 'text!./Vending.html';
-import cssText from 'text!./Vending.css';
-import Renderer from 'Renderer/Renderer';
+import DB  from '/src/DB/DBManager';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import ItemType  from '/src/DB/Items/ItemType';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Session  from '/src/Engine/SessionStorage';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ItemInfo  from '/src/UI/Components/ItemInfo/ItemInfo';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import CartItems  from '/src/UI/Components/CartItems/CartItems';
+import VendingModelMessage  from '/src/UI/Components/Vending/VendingModelMessage/VendingModelMessage';
+import htmlText  from './Vending.html';
+import cssText  from './Vending.css';
+import Renderer  from '/src/Renderer/Renderer';
 
 
 /**

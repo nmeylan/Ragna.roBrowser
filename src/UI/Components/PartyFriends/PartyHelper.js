@@ -22,11 +22,11 @@
 /**
  * Dependencies
  */
-import UIManager from 'UI/UIManager';
+import UIManager  from '/src/UI/UIManager';
 
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./PartyHelper.html';
-import cssText from 'text!./PartyHelper.css';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './PartyHelper.html';
+import cssText  from './PartyHelper.css';
 
 
 /**

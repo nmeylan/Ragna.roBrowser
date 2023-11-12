@@ -20,20 +20,20 @@
 
 
 // Load dependencies
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Emotions from 'DB/Emotions';
-import BGM from 'Audio/BGM';
-import Sound from 'Audio/SoundManager';
-import Session from 'Engine/SessionStorage';
-import PACKET from 'Network/PacketStructure';
-import PACKETVER from 'Network/PacketVerManager';
-import Network from 'Network/NetworkManager';
-import ControlPreferences from 'Preferences/Controls';
-import AudioPreferences from 'Preferences/Audio';
-import MapPreferences from 'Preferences/Map';
-import CameraPreferences from 'Preferences/Camera';
-import Renderer from 'Renderer/Renderer';
+import Emotions  from '/src/DB/Emotions';
+import BGM  from '/src/Audio/BGM';
+import Sound  from '/src/Audio/SoundManager';
+import Session  from '/src/Engine/SessionStorage';
+import PACKET  from '/src/Network/PacketStructure';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import Network  from '/src/Network/NetworkManager';
+import ControlPreferences  from '/src/Preferences/Controls';
+import AudioPreferences  from '/src/Preferences/Audio';
+import MapPreferences  from '/src/Preferences/Map';
+import CameraPreferences  from '/src/Preferences/Camera';
+import Renderer  from '/src/Renderer/Renderer';
 var getModule          = require;
 
 

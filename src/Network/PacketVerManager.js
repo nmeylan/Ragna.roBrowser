@@ -18,7 +18,7 @@
  * @author Vincent Thibault
  */
 
-import Configs from 'Core/Configs';
+import Configs  from '/src/Core/Configs';
 
 "use strict";
 

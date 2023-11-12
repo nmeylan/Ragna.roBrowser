@@ -22,13 +22,13 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Trade from 'UI/Components/Trade/Trade';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import UIManager from 'UI/UIManager';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Trade  from '/src/UI/Components/Trade/Trade';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import UIManager  from '/src/UI/UIManager';
 
 
 /**

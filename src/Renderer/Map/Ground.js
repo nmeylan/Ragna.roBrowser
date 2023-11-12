@@ -34,10 +34,10 @@
  *
  * @author Vincent Thibault
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import Texture from 'Utils/Texture';
-import Preferences from 'Preferences/Map';
+import Texture  from '/src/Utils/Texture';
+import Preferences  from '/src/Preferences/Map';
 'use strict';
 
 

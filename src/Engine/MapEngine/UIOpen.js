@@ -18,15 +18,15 @@
  */
 'use strict';
 
-import Configs from 'Core/Configs';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import PACKETVER from 'Network/PacketVerManager';
+import Configs  from '/src/Core/Configs';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import PACKETVER  from '/src/Network/PacketVerManager';
 
 /**
  * Load dependencies
  */
-import PACKET from 'Network/PacketStructure';
+import PACKET  from '/src/Network/PacketStructure';
 
 
 /**

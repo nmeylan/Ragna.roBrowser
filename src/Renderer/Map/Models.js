@@ -34,7 +34,7 @@
  *
  * @author Vincent Thibault
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
 'use strict';
 

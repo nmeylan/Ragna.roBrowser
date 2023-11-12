@@ -34,7 +34,7 @@
  *
  * @author Vincent Thibault
  */
-import Context from './Context';
+import Context   from './Context';
 
 'use strict';
 

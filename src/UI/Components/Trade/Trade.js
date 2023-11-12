@@ -18,20 +18,20 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Session from 'Engine/SessionStorage';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import ItemInfo from 'UI/Components/ItemInfo/ItemInfo';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import htmlText from 'text!./Trade.html';
-import cssText from 'text!./Trade.css';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Session  from '/src/Engine/SessionStorage';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import ItemInfo  from '/src/UI/Components/ItemInfo/ItemInfo';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import htmlText  from './Trade.html';
+import cssText  from './Trade.css';
 
 
 /**

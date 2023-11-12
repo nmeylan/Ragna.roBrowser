@@ -9,8 +9,8 @@
  */
 'use strict';
 
-import Configs from 'Core/Configs';
-import PACKETVER from 'Network/PacketVerManager';
+import Configs  from '/src/Core/Configs';
+import PACKETVER  from '/src/Network/PacketVerManager';
 
 var UIVersionManager = {};
 

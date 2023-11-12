@@ -16,10 +16,10 @@
  *
  * @author Vincent Thibault
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import glMatrix from 'Utils/gl-matrix';
-import Camera from './Camera';
+import glMatrix  from '/src/Utils/gl-matrix';
+import Camera   from './Camera';
 "use strict";
 
 

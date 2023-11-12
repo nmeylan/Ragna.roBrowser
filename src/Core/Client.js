@@ -24,14 +24,14 @@
 
 
 // Load dependencies
-import Executable from 'Utils/Executable';
+import Executable  from '/src/Utils/Executable';
 
-import Texture from 'Utils/Texture';
-import WebGL from 'Utils/WebGL';
-import Configs from './Configs';
-import Thread from './Thread';
-import Memory from './MemoryManager';
-import PACKETVER from 'Network/PacketVerManager';
+import Texture  from '/src/Utils/Texture';
+import WebGL  from '/src/Utils/WebGL';
+import Configs   from './Configs';
+import Thread   from './Thread';
+import Memory   from './MemoryManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
 var getModule     = require;
 
 

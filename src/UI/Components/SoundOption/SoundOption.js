@@ -22,15 +22,15 @@
 /**
  * Dependencies
  */
-import Preferences from 'Core/Preferences';
+import Preferences  from '/src/Core/Preferences';
 
-import AudioSettings from 'Preferences/Audio';
-import AudioManager from 'Audio/BGM';
-import SoundManager from 'Audio/SoundManager';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./SoundOption.html';
-import cssText from 'text!./SoundOption.css';
+import AudioSettings  from '/src/Preferences/Audio';
+import AudioManager  from '/src/Audio/BGM';
+import SoundManager  from '/src/Audio/SoundManager';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './SoundOption.html';
+import cssText  from './SoundOption.css';
 
 
 /**

@@ -22,17 +22,17 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import SkillInfo from 'DB/Skills/SkillInfo';
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import htmlText from 'text!./ItemSelection.html';
-import cssText from 'text!./ItemSelection.css';
+import DB  from '/src/DB/DBManager';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import htmlText  from './ItemSelection.html';
+import cssText  from './ItemSelection.css';
 
 
 /**

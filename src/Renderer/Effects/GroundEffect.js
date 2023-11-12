@@ -1,8 +1,8 @@
-import WebGL from 'Utils/WebGL';
-import glMatrix from 'Utils/gl-matrix';
-import SkillID from 'DB/Skills/SkillConst';
-import Client from 'Core/Client';
-import Altitude from 'Renderer/Map/Altitude';
+import WebGL  from '/src/Utils/WebGL';
+import glMatrix  from '/src/Utils/gl-matrix';
+import SkillID  from '/src/DB/Skills/SkillConst';
+import Client  from '/src/Core/Client';
+import Altitude  from '/src/Renderer/Map/Altitude';
 
 'use strict';
 

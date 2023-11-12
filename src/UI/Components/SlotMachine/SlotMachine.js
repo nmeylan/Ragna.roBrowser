@@ -24,15 +24,15 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Client from 'Core/Client';
-import Events from 'Core/Events';
-import Renderer from 'Renderer/Renderer';
-import Entity from 'Renderer/Entity/Entity';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Client  from '/src/Core/Client';
+import Events  from '/src/Core/Events';
+import Renderer  from '/src/Renderer/Renderer';
+import Entity  from '/src/Renderer/Entity/Entity';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
 
 
 /**

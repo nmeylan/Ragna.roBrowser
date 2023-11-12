@@ -22,21 +22,21 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Configs from 'Core/Configs';
-import Client from 'Core/Client';
-import Thread from 'Core/Thread';
-import Memory from 'Core/MemoryManager';
-import Events from 'Core/Events';
-import KEYS from 'Controls/KeyEventHandler';
-import Sprite from 'Loaders/Sprite';
-import Targa from 'Loaders/Targa';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./GrfViewer.html';
-import cssText from 'text!./GrfViewer.css';
-import History from './History';
+import Configs  from '/src/Core/Configs';
+import Client  from '/src/Core/Client';
+import Thread  from '/src/Core/Thread';
+import Memory  from '/src/Core/MemoryManager';
+import Events  from '/src/Core/Events';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Sprite  from '/src/Loaders/Sprite';
+import Targa  from '/src/Loaders/Targa';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './GrfViewer.html';
+import cssText  from './GrfViewer.css';
+import History   from './History';
 
 // Ugly, require api.js to display models and map
 import '../../../../api';

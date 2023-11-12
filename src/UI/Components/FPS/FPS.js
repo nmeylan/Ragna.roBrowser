@@ -21,13 +21,13 @@
 /**
  * Dependencies
  */
-import Preferences from 'Core/Preferences';
+import Preferences  from '/src/Core/Preferences';
 
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./FPS.html';
-import cssText from 'text!./FPS.css';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './FPS.html';
+import cssText  from './FPS.css';
 
 /**
  * Create Component

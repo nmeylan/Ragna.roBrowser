@@ -22,18 +22,18 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import htmlText from 'text!./CheckAttendance.html';
-import cssText from 'text!./CheckAttendance.css';
-import jQuery from 'Utils/jquery';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import htmlText  from './CheckAttendance.html';
+import cssText  from './CheckAttendance.css';
+import jQuery  from '/src/Utils/jquery';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
 
 /**
  * Create Component

@@ -7,9 +7,9 @@
  *
  * @author Vincent Thibault
  */
-import GameEngine from '../Engine/GameEngine';
-import Context from '../Core/Context';
-import Plugins from '../Plugins/PluginManager';
+import GameEngine  from '/src/Engine/GameEngine';
+import Context  from '/src/Core/Context';
+import Plugins  from '/src/Plugins/PluginManager';
 
 // Equivalent code
 'use strict';

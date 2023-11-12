@@ -10,11 +10,11 @@
 'use strict';
 
 // Load dependencies
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import UIComponent from './UIComponent';
-import KEYS from 'Controls/KeyEventHandler';
-import Renderer from 'Renderer/Renderer';
+import UIComponent   from './UIComponent';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Renderer  from '/src/Renderer/Renderer';
 var getModule   = require;
 
 

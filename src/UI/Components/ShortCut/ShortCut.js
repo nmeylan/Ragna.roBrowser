@@ -22,26 +22,26 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import ItemType from 'DB/Items/ItemType';
-import SkillInfo from 'DB/Skills/SkillInfo';
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ItemInfo from 'UI/Components/ItemInfo/ItemInfo';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import UIVersionManager from 'UI/UIVersionManager';
-import SkillListMER from 'UI/Components/SkillListMER/SkillListMER';
-import SkillDescription from 'UI/Components/SkillDescription/SkillDescription';
-import SkillTargetSelection from 'UI/Components/SkillTargetSelection/SkillTargetSelection';
-import Guild from 'UI/Components/Guild/Guild';
-import htmlText from 'text!./ShortCut.html';
-import cssText from 'text!./ShortCut.css';
+import ItemType  from '/src/DB/Items/ItemType';
+import SkillInfo  from '/src/DB/Skills/SkillInfo';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ItemInfo  from '/src/UI/Components/ItemInfo/ItemInfo';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import UIVersionManager  from '/src/UI/UIVersionManager';
+import SkillListMER  from '/src/UI/Components/SkillListMER/SkillListMER';
+import SkillDescription  from '/src/UI/Components/SkillDescription/SkillDescription';
+import SkillTargetSelection  from '/src/UI/Components/SkillTargetSelection/SkillTargetSelection';
+import Guild  from '/src/UI/Components/Guild/Guild';
+import htmlText  from './ShortCut.html';
+import cssText  from './ShortCut.css';
 
 var SkillWindow;
 if (UIVersionManager.getSkillListVersion() === 0) {

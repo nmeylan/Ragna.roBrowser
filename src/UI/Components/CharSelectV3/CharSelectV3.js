@@ -22,21 +22,21 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import MonsterTable from 'DB/Monsters/MonsterTable';
-import Preferences from 'Core/Preferences';
-import KEYS from 'Controls/KeyEventHandler';
-import Renderer from 'Renderer/Renderer';
-import Entity from 'Renderer/Entity/Entity';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Camera from 'Renderer/Camera';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./CharSelectV3.html';
-import cssText from 'text!./CharSelectV3.css';
-import Client from 'Core/Client';
-import jQuery from 'Utils/jquery';
+import MonsterTable  from '/src/DB/Monsters/MonsterTable';
+import Preferences  from '/src/Core/Preferences';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Renderer  from '/src/Renderer/Renderer';
+import Entity  from '/src/Renderer/Entity/Entity';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Camera  from '/src/Renderer/Camera';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './CharSelectV3.html';
+import cssText  from './CharSelectV3.css';
+import Client  from '/src/Core/Client';
+import jQuery  from '/src/Utils/jquery';
 
 
 /**

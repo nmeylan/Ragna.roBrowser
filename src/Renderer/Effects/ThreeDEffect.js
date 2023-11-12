@@ -1,9 +1,9 @@
-import WebGL from 'Utils/WebGL';
-import Client from 'Core/Client';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import EntityManager from 'Renderer/EntityManager';
-import Altitude from 'Renderer/Map/Altitude';
-import Camera from 'Renderer/Camera';
+import WebGL  from '/src/Utils/WebGL';
+import Client  from '/src/Core/Client';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Camera  from '/src/Renderer/Camera';
 'use strict';
 
 function randBetween(minimum, maximum) {

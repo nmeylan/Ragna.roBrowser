@@ -38,9 +38,9 @@
  * @author Vincent Thibault
  */
 
-import require from 'require';
+import require  from '/src/require';
 
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 'use strict';
 
 

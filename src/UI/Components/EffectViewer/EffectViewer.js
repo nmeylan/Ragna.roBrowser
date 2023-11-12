@@ -22,24 +22,24 @@
 /**
  * Load dependencies
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import Client from 'Core/Client';
-import Renderer from 'Renderer/Renderer';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import EffectManager from 'Renderer/EffectManager';
-import EffectTable from 'DB/Effects/EffectTable';
-import EC from 'DB/Effects/EffectConst';
-import EntityManager from 'Renderer/EntityManager';
-import Entity from 'Renderer/Entity/Entity';
-import Session from 'Engine/SessionStorage';
-import Camera from 'Renderer/Camera';
-import MapControl from 'Controls/MapControl';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./EffectViewer.html';
-import cssText from 'text!./EffectViewer.css';
+import Client  from '/src/Core/Client';
+import Renderer  from '/src/Renderer/Renderer';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import EffectManager  from '/src/Renderer/EffectManager';
+import EffectTable  from '/src/DB/Effects/EffectTable';
+import EC  from '/src/DB/Effects/EffectConst';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Entity  from '/src/Renderer/Entity/Entity';
+import Session  from '/src/Engine/SessionStorage';
+import Camera  from '/src/Renderer/Camera';
+import MapControl  from '/src/Controls/MapControl';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './EffectViewer.html';
+import cssText  from './EffectViewer.css';
 
 var mat4 = glMatrix.mat4;
 

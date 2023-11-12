@@ -22,17 +22,17 @@
 /**
  * Dependencies
  */
-import FPS from 'UI/Components/FPS/FPS';
+import FPS  from '/src/UI/Components/FPS/FPS';
 
-import Configs from 'Core/Configs';
-import Context from 'Core/Context';
-import Preferences from 'Core/Preferences';
-import GraphicsSettings from 'Preferences/Graphics';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./GraphicsOption.html';
-import cssText from 'text!./GraphicsOption.css';
+import Configs  from '/src/Core/Configs';
+import Context  from '/src/Core/Context';
+import Preferences  from '/src/Core/Preferences';
+import GraphicsSettings  from '/src/Preferences/Graphics';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './GraphicsOption.html';
+import cssText  from './GraphicsOption.css';
 
 
 /**

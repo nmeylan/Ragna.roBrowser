@@ -16,11 +16,11 @@
  *
  * @author Vincent Thibault
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import EntityManager from './EntityManager';
-import Entity from './Entity/Entity';
-import Altitude from 'Renderer/Map/Altitude';
+import EntityManager   from '/src/EntityManager';
+import Entity   from '/src/Entity/Entity';
+import Altitude  from '/src/Renderer/Map/Altitude';
 'use strict';
 
 

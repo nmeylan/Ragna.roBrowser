@@ -13,26 +13,26 @@
 
 
 // Load dependencies
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Queue from 'Utils/Queue';
-import Sound from 'Audio/SoundManager';
-import BGM from 'Audio/BGM';
-import DB from 'DB/DBManager';
-import Configs from 'Core/Configs';
-import Client from 'Core/Client';
-import Thread from 'Core/Thread';
-import Context from 'Core/Context';
-import LoginEngine from 'Engine/LoginEngine';
-import Network from 'Network/NetworkManager';
-import Renderer from 'Renderer/Renderer';
-import MapRenderer from 'Renderer/MapRenderer';
-import UIManager from 'UI/UIManager';
-import Cursor from 'UI/CursorManager';
-import Scrollbar from 'UI/Scrollbar';
-import Background from 'UI/Background';
-import Intro from 'UI/Components/Intro/Intro';
-import WinList from 'UI/Components/WinList/WinList';
+import Queue  from '/src/Utils/Queue';
+import Sound  from '/src/Audio/SoundManager';
+import BGM  from '/src/Audio/BGM';
+import DB  from '/src/DB/DBManager';
+import Configs  from '/src/Core/Configs';
+import Client  from '/src/Core/Client';
+import Thread  from '/src/Core/Thread';
+import Context  from '/src/Core/Context';
+import LoginEngine  from '/src/Engine/LoginEngine';
+import Network  from '/src/Network/NetworkManager';
+import Renderer  from '/src/Renderer/Renderer';
+import MapRenderer  from '/src/Renderer/MapRenderer';
+import UIManager  from '/src/UI/UIManager';
+import Cursor  from '/src/UI/CursorManager';
+import Scrollbar  from '/src/UI/Scrollbar';
+import Background  from '/src/UI/Background';
+import Intro  from '/src/UI/Components/Intro/Intro';
+import WinList  from '/src/UI/Components/WinList/WinList';
 
 
 /**

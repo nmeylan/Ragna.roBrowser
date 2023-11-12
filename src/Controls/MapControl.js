@@ -20,31 +20,31 @@
 
 
 // Load dependencies
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import UIManager from 'UI/UIManager';
-import Cursor from 'UI/CursorManager';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import Equipment from 'UI/Components/Equipment/Equipment';
-import Inventory from 'UI/Components/Inventory/Inventory';
-import ShortCut from 'UI/Components/ShortCut/ShortCut';
-import SkillTargetSelection from 'UI/Components/SkillTargetSelection/SkillTargetSelection';
-import Mouse from 'Controls/MouseEventHandler';
-import Mobile from 'Core/Mobile';
-import Renderer from 'Renderer/Renderer';
-import Camera from 'Renderer/Camera';
-import EntityManager from 'Renderer/EntityManager';
-import Session from 'Engine/SessionStorage';
-import Preferences from 'Preferences/Controls';
-import KEYS from 'Controls/KeyEventHandler';
-import AIDriver from 'Core/AIDriver';
-import Altitude from 'Renderer/Map/Altitude';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import Network from 'Network/NetworkManager';
-import Events from 'Core/Events';
+import DB  from '/src/DB/DBManager';
+import UIManager  from '/src/UI/UIManager';
+import Cursor  from '/src/UI/CursorManager';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import Equipment  from '/src/UI/Components/Equipment/Equipment';
+import Inventory  from '/src/UI/Components/Inventory/Inventory';
+import ShortCut  from '/src/UI/Components/ShortCut/ShortCut';
+import SkillTargetSelection  from '/src/UI/Components/SkillTargetSelection/SkillTargetSelection';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Mobile  from '/src/Core/Mobile';
+import Renderer  from '/src/Renderer/Renderer';
+import Camera  from '/src/Renderer/Camera';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Session  from '/src/Engine/SessionStorage';
+import Preferences  from '/src/Preferences/Controls';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import AIDriver  from '/src/Core/AIDriver';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Network  from '/src/Network/NetworkManager';
+import Events  from '/src/Core/Events';
 import 'Controls/ScreenShot';
 
 

@@ -22,16 +22,16 @@
 /**
  * Dependencies
  */
-import KEYS from 'Controls/KeyEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
 
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import SoundOption from 'UI/Components/SoundOption/SoundOption';
-import GraphicsOption from 'UI/Components/GraphicsOption/GraphicsOption';
-import ShortCutOption from 'UI/Components/ShortCutOption/ShortCutOption';
-import htmlText from 'text!./Escape.html';
-import cssText from 'text!./Escape.css';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import SoundOption  from '/src/UI/Components/SoundOption/SoundOption';
+import GraphicsOption  from '/src/UI/Components/GraphicsOption/GraphicsOption';
+import ShortCutOption  from '/src/UI/Components/ShortCutOption/ShortCutOption';
+import htmlText  from './Escape.html';
+import cssText  from './Escape.css';
 
 
 /**

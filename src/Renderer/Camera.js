@@ -12,20 +12,20 @@
 /**
  * Load dependencies
  */
-import KEYS from 'Controls/KeyEventHandler';
+import KEYS  from '/src/Controls/KeyEventHandler';
 
-import Mouse from 'Controls/MouseEventHandler';
-import Events from 'Core/Events';
-import Preferences from 'Preferences/Camera';
-import Session from 'Engine/SessionStorage';
-import glMatrix from 'Utils/gl-matrix';
-import Configs from 'Core/Configs';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Events  from '/src/Core/Events';
+import Preferences  from '/src/Preferences/Camera';
+import Session  from '/src/Engine/SessionStorage';
+import glMatrix  from '/src/Utils/gl-matrix';
+import Configs  from '/src/Core/Configs';
 var mat4        = glMatrix.mat4;
 var mat3        = glMatrix.mat3;
 var vec2        = glMatrix.vec2;
 var vec3        = glMatrix.vec3;
 var _position   = vec3.create();
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 var getModule = require;
 
 /**

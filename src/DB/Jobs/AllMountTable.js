@@ -18,7 +18,7 @@
  * @author Antares
  */
 
-import JobId from './JobConst';
+import JobId   from './JobConst';
 
 'use strict';
 

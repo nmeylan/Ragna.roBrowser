@@ -18,7 +18,7 @@
  * @author Vincent Thibault
  */
 
-import glMatrix from 'Vendors/gl-matrix';
+import glMatrix  from '/src/Vendors/gl-matrix';
 
 'use strict';
 

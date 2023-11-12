@@ -38,9 +38,9 @@
  * @author Vincent Thibault
  */
 
-import jQuery from 'jquery';
+import jQuery  from '/src/Vendors/jquery';
 
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 'use strict';
 
 

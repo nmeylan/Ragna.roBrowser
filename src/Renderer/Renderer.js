@@ -13,17 +13,17 @@
 /**
  * Load dependencies
  */
-import WebGL from 'Utils/WebGL';
+import WebGL  from '/src/Utils/WebGL';
 
-import jQuery from 'Utils/jquery';
-import glMatrix from 'Utils/gl-matrix';
-import Configs from 'Core/Configs';
-import GraphicsSettings from 'Preferences/Graphics';
-import Events from 'Core/Events';
-import Background from 'UI/Background';
-import Cursor from 'UI/CursorManager';
-import Mouse from 'Controls/MouseEventHandler';
-import Camera from 'Renderer/Camera';
+import jQuery  from '/src/Utils/jquery';
+import glMatrix  from '/src/Utils/gl-matrix';
+import Configs  from '/src/Core/Configs';
+import GraphicsSettings  from '/src/Preferences/Graphics';
+import Events  from '/src/Core/Events';
+import Background  from '/src/UI/Background';
+import Cursor  from '/src/UI/CursorManager';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import Camera  from '/src/Renderer/Camera';
 var mat4          = glMatrix.mat4;
 var getModule     = require;
 

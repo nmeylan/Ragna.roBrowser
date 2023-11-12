@@ -22,13 +22,13 @@
 /**
  * Dependencies
  */
-import UIComponent from 'UI/UIComponent';
+import UIComponent  from '/src/UI/UIComponent';
 
-import UIManager from 'UI/UIManager';
-import Session from 'Engine/SessionStorage';
-import UIVersionManager from 'UI/UIVersionManager';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import Session  from '/src/Engine/SessionStorage';
+import UIVersionManager  from '/src/UI/UIVersionManager';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
 
 
 var _preferences;

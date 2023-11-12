@@ -21,12 +21,12 @@
 /**
  * Load dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import Quest from 'UI/Components/Quest/Quest';
-import jQuery from 'Utils/jquery';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Quest  from '/src/UI/Components/Quest/Quest';
+import jQuery  from '/src/Utils/jquery';
 
 /**
  * Quest List

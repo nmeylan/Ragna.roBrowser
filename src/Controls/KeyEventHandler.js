@@ -38,7 +38,7 @@
  * @author Vincent Thibault
  */
 
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
 'use strict';
 

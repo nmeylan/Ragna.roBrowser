@@ -11,24 +11,24 @@
 /**
  * Load dependencies
  */
-import EffectDB from 'DB/Effects/EffectTable';
+import EffectDB  from '/src/DB/Effects/EffectTable';
 
-import SkillEffect from 'DB/Skills/SkillEffect';
-import SkillUnit from 'DB/Skills/SkillUnit';
-import SU from 'DB/Skills/SkillUnitConst';
-import ItemEffect from 'DB/Items/ItemEffect';
-import Events from 'Core/Events';
-import Cylinder from 'Renderer/Effects/Cylinder';
-import StrEffect from 'Renderer/Effects/StrEffect';
-import TwoDEffect from 'Renderer/Effects/TwoDEffect';
-import ThreeDEffect from 'Renderer/Effects/ThreeDEffect';
-import Entity from 'Renderer/Entity/Entity';
-import EntityManager from 'Renderer/EntityManager';
-import Renderer from 'Renderer/Renderer';
-import Altitude from 'Renderer/Map/Altitude';
-import Sound from 'Audio/SoundManager';
-import Preferences from 'Preferences/Map';
-import QuadHorn from 'Renderer/Effects/QuadHorn';
+import SkillEffect  from '/src/DB/Skills/SkillEffect';
+import SkillUnit  from '/src/DB/Skills/SkillUnit';
+import SU  from '/src/DB/Skills/SkillUnitConst';
+import ItemEffect  from '/src/DB/Items/ItemEffect';
+import Events  from '/src/Core/Events';
+import Cylinder  from '/src/Renderer/Effects/Cylinder';
+import StrEffect  from '/src/Renderer/Effects/StrEffect';
+import TwoDEffect  from '/src/Renderer/Effects/TwoDEffect';
+import ThreeDEffect  from '/src/Renderer/Effects/ThreeDEffect';
+import Entity  from '/src/Renderer/Entity/Entity';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Renderer  from '/src/Renderer/Renderer';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Sound  from '/src/Audio/SoundManager';
+import Preferences  from '/src/Preferences/Map';
+import QuadHorn  from '/src/Renderer/Effects/QuadHorn';
 
 /**
  * @var {object} saved webgl context

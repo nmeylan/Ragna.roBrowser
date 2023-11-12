@@ -20,20 +20,20 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import jQuery from 'Utils/jquery';
-import Preferences from 'Core/Preferences';
-import Renderer from 'Renderer/Renderer';
-import Mouse from 'Controls/MouseEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Emoticons from 'UI/Components/Emoticons/Emoticons';
-import htmlText from 'text!./ShortCuts.html';
-import cssText from 'text!./ShortCuts.css';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
+import jQuery  from '/src/Utils/jquery';
+import Preferences  from '/src/Core/Preferences';
+import Renderer  from '/src/Renderer/Renderer';
+import Mouse  from '/src/Controls/MouseEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Emoticons  from '/src/UI/Components/Emoticons/Emoticons';
+import htmlText  from './ShortCuts.html';
+import cssText  from './ShortCuts.css';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
 var getModule    		= require;
 
 

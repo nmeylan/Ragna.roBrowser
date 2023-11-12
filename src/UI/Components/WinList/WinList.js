@@ -22,14 +22,14 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import Renderer from 'Renderer/Renderer';
-import KEYS from 'Controls/KeyEventHandler';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./WinList.html';
-import cssText from 'text!./WinList.css';
+import Renderer  from '/src/Renderer/Renderer';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './WinList.html';
+import cssText  from './WinList.css';
 
 
 /**

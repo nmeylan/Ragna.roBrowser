@@ -16,22 +16,22 @@
 + */
 'use strict';
 
-import jQuery from 'Utils/jquery';
-import Context from 'Core/Context';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import Preferences from 'Core/Preferences';
-import Session from 'Engine/SessionStorage';
-import Renderer from 'Renderer/Renderer';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import EntityManager from 'Renderer/EntityManager';
-import Network from 'Network/NetworkManager';
-import PathFinding from 'Utils/PathFinding';
-import Altitude from 'Renderer/Map/Altitude';
-import Events from 'Core/Events';
-import htmlText from 'text!./MobileUI.html';
-import cssText from 'text!./MobileUI.css';
+import jQuery  from '/src/Utils/jquery';
+import Context  from '/src/Core/Context';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import Preferences  from '/src/Core/Preferences';
+import Session  from '/src/Engine/SessionStorage';
+import Renderer  from '/src/Renderer/Renderer';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import EntityManager  from '/src/Renderer/EntityManager';
+import Network  from '/src/Network/NetworkManager';
+import PathFinding  from '/src/Utils/PathFinding';
+import Altitude  from '/src/Renderer/Map/Altitude';
+import Events  from '/src/Core/Events';
+import htmlText  from './MobileUI.html';
+import cssText  from './MobileUI.css';
 
 /**
  * Create Component

@@ -34,10 +34,10 @@
  *
  * @author Vincent Thibault
  */
-import glMatrix from 'Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
-import PathFinding from 'Utils/PathFinding';
-import Mouse from 'Controls/MouseEventHandler';
+import PathFinding  from '/src/Utils/PathFinding';
+import Mouse  from '/src/Controls/MouseEventHandler';
 'use strict';
 
 

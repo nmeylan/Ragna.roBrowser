@@ -13,19 +13,19 @@
 
 
 // Load dependencies
-import Configs from 'Core/Configs';
+import Configs  from '/src/Core/Configs';
 
-import Context from 'Core/Context';
-import BinaryReader from 'Utils/BinaryReader';
-import PACKETVER from './PacketVerManager';
-import PacketVersions from './PacketVersions';
-import PacketRegister from './PacketRegister';
-import PacketCrypt from './PacketCrypt';
-import ChromeSocket from './SocketHelpers/ChromeSocket';
-import JavaSocket from './SocketHelpers/JavaSocket';
-import WebSocket from './SocketHelpers/WebSocket';
-import TCPSocket from './SocketHelpers/TCPSocket';
-import NodeSocket from './SocketHelpers/NodeSocket';
+import Context  from '/src/Core/Context';
+import BinaryReader  from '/src/Utils/BinaryReader';
+import PACKETVER   from './PacketVerManager';
+import PacketVersions   from './PacketVersions';
+import PacketRegister   from './PacketRegister';
+import PacketCrypt   from './PacketCrypt';
+import ChromeSocket   from './SocketHelpers/ChromeSocket';
+import JavaSocket   from './SocketHelpers/JavaSocket';
+import WebSocket   from './SocketHelpers/WebSocket';
+import TCPSocket   from './SocketHelpers/TCPSocket';
+import NodeSocket   from './SocketHelpers/NodeSocket';
 var getModule      = require;
 
 

@@ -34,7 +34,7 @@
  *
  * @author Vincent Thibault
  */
-import Renderer from 'Renderer/Renderer';
+import Renderer  from '/src/Renderer/Renderer';
 
 'use strict';
 

@@ -38,11 +38,11 @@
  * @author Vincent Thibault
  */
 
-import GameFileDecrypt from './GameFileDecrypt';
+import GameFileDecrypt   from '/src/GameFileDecrypt';
 
-import BinaryReader from 'Utils/BinaryReader';
-import Struct from 'Utils/Struct';
-import Inflate from 'Utils/Inflate';
+import BinaryReader  from '/src/Utils/BinaryReader';
+import Struct  from '/src/Utils/Struct';
+import Inflate  from '/src/Utils/Inflate';
 'use strict';
 
 

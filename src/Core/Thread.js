@@ -46,9 +46,9 @@
  */
 
 
-import require from 'require';
+import require  from '/src/require';
 
-import Configs from 'Core/Configs';
+import Configs  from '/src/Core/Configs';
 'use strict';
 
 

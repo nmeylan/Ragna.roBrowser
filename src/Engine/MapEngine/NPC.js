@@ -14,21 +14,21 @@
 /**
  * Load dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import Sound from 'Audio/SoundManager';
-import BGM from 'Audio/BGM';
-import Client from 'Core/Client';
-import Session from 'Engine/SessionStorage';
-import Network from 'Network/NetworkManager';
-import PACKETVER from 'Network/PacketVerManager';
-import PACKET from 'Network/PacketStructure';
-import Renderer from 'Renderer/Renderer';
-import NpcBox from 'UI/Components/NpcBox/NpcBox';
-import InputBox from 'UI/Components/InputBox/InputBox';
-import NpcMenu from 'UI/Components/NpcMenu/NpcMenu';
-import WinPopup from 'UI/Components/WinPopup/WinPopup';
+import DB  from '/src/DB/DBManager';
+import Sound  from '/src/Audio/SoundManager';
+import BGM  from '/src/Audio/BGM';
+import Client  from '/src/Core/Client';
+import Session  from '/src/Engine/SessionStorage';
+import Network  from '/src/Network/NetworkManager';
+import PACKETVER  from '/src/Network/PacketVerManager';
+import PACKET  from '/src/Network/PacketStructure';
+import Renderer  from '/src/Renderer/Renderer';
+import NpcBox  from '/src/UI/Components/NpcBox/NpcBox';
+import InputBox  from '/src/UI/Components/InputBox/InputBox';
+import NpcMenu  from '/src/UI/Components/NpcMenu/NpcMenu';
+import WinPopup  from '/src/UI/Components/WinPopup/WinPopup';
 var MiniMap;
 if(PACKETVER.value >= 20180124) {
     MiniMap          = require('UI/Components/MiniMapV2/MiniMapV2');

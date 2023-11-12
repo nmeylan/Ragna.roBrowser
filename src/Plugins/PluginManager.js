@@ -34,7 +34,7 @@
 /**
  * Plugins are loaded from configs
  */
-import Configs from 'Core/Configs';
+import Configs  from '/src/Core/Configs';
 
 
 /**

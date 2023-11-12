@@ -34,11 +34,11 @@
  *
  * @author Vincent Thibault
  */
-import Client from 'Core/Client';
+import Client  from '/src/Core/Client';
 
-import Renderer from 'Renderer/Renderer';
-import SpriteRenderer from 'Renderer/SpriteRenderer';
-import Camera from 'Renderer/Camera';
+import Renderer  from '/src/Renderer/Renderer';
+import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
+import Camera  from '/src/Renderer/Camera';
 'use strict';
 
 

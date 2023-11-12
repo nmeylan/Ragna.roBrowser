@@ -18,7 +18,7 @@
   define, window, process, Packages,
   java, location, Components, FileUtils */
 
-import module from 'module';
+import module  from '/src/module';
 
 'use strict';
 

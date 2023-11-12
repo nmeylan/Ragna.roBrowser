@@ -11,13 +11,13 @@
 /**
  * Load dependencies
  */
-import Sound from 'Audio/SoundManager';
+import Sound  from '/src/Audio/SoundManager';
 
-import StatusConst from 'DB/Status/StatusState';
-import MountTable from 'DB/Jobs/MountTable';
-import AllMountTable from 'DB/Jobs/AllMountTable';
-import Session from 'Engine/SessionStorage';
-import Emotions from 'DB/Emotions';
+import StatusConst  from '/src/DB/Status/StatusState';
+import MountTable  from '/src/DB/Jobs/MountTable';
+import AllMountTable  from '/src/DB/Jobs/AllMountTable';
+import Session  from '/src/Engine/SessionStorage';
+import Emotions  from '/src/DB/Emotions';
 
 
 /**

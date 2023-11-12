@@ -22,16 +22,16 @@
 /**
  * Dependencies
  */
-import jQuery from 'Utils/jquery';
+import jQuery  from '/src/Utils/jquery';
 
-import DB from 'DB/DBManager';
-import KEYS from 'Controls/KeyEventHandler';
-import Renderer from 'Renderer/Renderer';
-import Preferences from 'Core/Preferences';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import htmlText from 'text!./ChatRoomCreate.html';
-import cssText from 'text!./ChatRoomCreate.css';
+import DB  from '/src/DB/DBManager';
+import KEYS  from '/src/Controls/KeyEventHandler';
+import Renderer  from '/src/Renderer/Renderer';
+import Preferences  from '/src/Core/Preferences';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import htmlText  from './ChatRoomCreate.html';
+import cssText  from './ChatRoomCreate.css';
 
 
 /**

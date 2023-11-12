@@ -22,21 +22,21 @@
 /**
  * Dependencies
  */
-import DB from 'DB/DBManager';
+import DB  from '/src/DB/DBManager';
 
-import Network from 'Network/NetworkManager';
-import PACKET from 'Network/PacketStructure';
-import jQuery from 'Utils/jquery';
-import Client from 'Core/Client';
-import Preferences from 'Core/Preferences';
-import Session from 'Engine/SessionStorage';
-import Renderer from 'Renderer/Renderer';
-import UIManager from 'UI/UIManager';
-import UIComponent from 'UI/UIComponent';
-import ChatBox from 'UI/Components/ChatBox/ChatBox';
-import ChatRoom from 'UI/Components/ChatRoom/ChatRoom';
-import htmlText from 'text!./ChangeCart.html';
-import cssText from 'text!./ChangeCart.css';
+import Network  from '/src/Network/NetworkManager';
+import PACKET  from '/src/Network/PacketStructure';
+import jQuery  from '/src/Utils/jquery';
+import Client  from '/src/Core/Client';
+import Preferences  from '/src/Core/Preferences';
+import Session  from '/src/Engine/SessionStorage';
+import Renderer  from '/src/Renderer/Renderer';
+import UIManager  from '/src/UI/UIManager';
+import UIComponent  from '/src/UI/UIComponent';
+import ChatBox  from '/src/UI/Components/ChatBox/ChatBox';
+import ChatRoom  from '/src/UI/Components/ChatRoom/ChatRoom';
+import htmlText  from './ChangeCart.html';
+import cssText  from './ChangeCart.css';
 
 
 /**

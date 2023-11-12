@@ -18,7 +18,7 @@
  * @author Vincent Thibault
  */
 
-import WeaponType from './WeaponType';
+import WeaponType   from './WeaponType';
 
 "use strict";
 
