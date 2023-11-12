@@ -3,14 +3,17 @@
 	"main": "index.html",
 	"version": "1.0.0",
 	"scripts": {
-		"serve": "live-server ./dist/Web",
-		"build": "node ./tools/builder-web.js"
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
 	},
 	"author": "Vincent Thibault",
 	"license": "GNU GPL V3",
 	"devDependencies": {
-		"live-server": "^1.2.2",
-		"requirejs": "^2.3.6",
-		"terser": "^5.19.4"
+		"vite": "^4.5.0",
+		"vite-plugin-html": "^3.2.0"
+	},
+	"dependencies": {
+		"5to6-codemod": "^1.8.0"
 	}
 }

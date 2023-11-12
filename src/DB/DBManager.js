@@ -27,7 +27,7 @@
 import Client  from '/src/Core/Client';
 
 import TextEncoding  from '/src/Vendors/text-encoding';
-import fengari  from '/src/Vendors/fengari-web';
+import fengari from '/src/Vendors/fengari-web';
 import ClassTable   from './Jobs/JobNameTable';
 import PaletteTable   from './Jobs/PalNameTable';
 import WeaponAction   from './Jobs/WeaponAction';

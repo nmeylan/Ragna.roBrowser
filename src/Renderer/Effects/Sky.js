@@ -30,8 +30,9 @@ import WeatherTable  from '/src/DB/Effects/WeatherEffect';
 import Client  from '/src/Core/Client';
 import Session  from '/src/Engine/SessionStorage';
 import SpriteRenderer  from '/src/Renderer/SpriteRenderer';
-import { vec3 }  from '/src/Utils/gl-matrix';
+import glMatrix  from '/src/Utils/gl-matrix';
 
+const vec3 = glMatrix.vec3;
 
 /**
  * @var {number} number of clouds to render

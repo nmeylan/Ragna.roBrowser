@@ -325,9 +325,12 @@
 
 			// Append ROBrowser to an element
 			case ROBrowser.TYPE.FRAME:
+				if (this.development) {
+					this._APP = window;
+					break;
+				}
 				this.width  = this.width  || '100%';
 				this.height = this.height || '100%';
-
 				var frame          = document.createElement('iframe');
 				frame.src          = this.baseUrl + '?' + Math.random() + location.hash; // fix bug on firefox
 				frame.width        = this.width;
@@ -337,7 +340,6 @@
 				frame.setAttribute('allowfullscreen', 'true');
 				frame.setAttribute('webkitallowfullscreen', 'true');
 				frame.setAttribute('mozallowfullscreen', 'true');
-
 				if (this.target) {
 					while (this.target.firstChild) {
 						this.target.removeChild( this.target.firstChild );
@@ -396,6 +398,7 @@
 		}
 
 		// Start waiting for robrowser
+		// this._Interval = setInterval( WaitForInitialization.bind(this), 100 );
 		this._Interval = setInterval( WaitForInitialization.bind(this), 100 );
 		window.addEventListener('message', OnMessage, false );
 	};
