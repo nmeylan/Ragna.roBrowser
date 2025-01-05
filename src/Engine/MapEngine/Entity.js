@@ -1968,6 +1968,18 @@ define(function( require )
 				}
 			}
 
+			function resumeWalk(){
+				// Try resuming walk when targeting something.
+				if(dstEntity.action !== dstEntity.ACTION.DIE && EntityManager.getFocusEntity() && dstEntity.walk.index < dstEntity.walk.total){
+					dstEntity.setAction({
+						action: dstEntity.ACTION.WALK,
+						frame:  0,
+						repeat: false,
+						play:   true
+					});
+				}
+			}
+
 			for(var i = 0; i<count; i++){
 				if( pkt.damage ){
 					Events.setTimeout( impendingAttack, pkt.attackMT + (C_MULTIHIT_DELAY * i) );
@@ -1976,6 +1988,8 @@ define(function( require )
 					Events.setTimeout( impendingAttack, pkt.attackMT + ((C_MULTIHIT_DELAY*1.75) * i) );
 				}
 			}
+
+			Events.setTimeout( resumeWalk, pkt.attackMT + (C_MULTIHIT_DELAY * (pkt.leftDamage ? 1.75 : 1) * (count-1)) + pkt.attackedMT );
 		}
 	}
 
