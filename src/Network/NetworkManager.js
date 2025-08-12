@@ -322,7 +322,11 @@ define(function( require )
 			if(Packets.list[id]) {
 				if(packetDump) {
 					let buffer_console = new Uint8Array( buffer, 0, length );
-					console.log("[Network] [recv] Packet ID: 0x%s - %s - Length: %d\nContent:\n%s", id.toString(16), packet.name, length, utilsBufferToHexString(buffer_console).toUpperCase());
+					if (packet) {
+						console.log("[Network] [recv] Packet ID: 0x%s - %s - Length: %d\nContent:\n%s", id.toString(16), packet.name, length, utilsBufferToHexString(buffer_console).toUpperCase());
+					} else {
+						console.log("[Network] [recv] Packet ID: 0x%s - Unknown - Length: %d\nContent:\n%s", id.toString(16),length, utilsBufferToHexString(buffer).toUpperCase());
+					}
 				}
 
 				packet  = Packets.list[id];
